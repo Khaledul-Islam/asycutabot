@@ -20,6 +20,7 @@ namespace asycutabot.ObjectRepository
         {
             static string _reference = "KufmkzIlJkuDJlbts6D-4A/D3bvf-YjD0yLF-X1qlQF_w";
             public static _Implementation._New_application_App.__New_application New_application { get; private set; } = new _Implementation._New_application_App.__New_application();
+            public static _Implementation._New_application_App.__New_application_1_ New_application_1_ { get; private set; } = new _Implementation._New_application_App.__New_application_1_();
         }
 
         public static class __Use_Application_
@@ -1419,6 +1420,61 @@ namespace asycutabot._Implementation
             }
 
             public _Implementation._New_application_App._New_application.__Click__push_button_7__ Click__push_button_7__ { get; private set; }
+        }
+    }
+
+    namespace _New_application_App._New_application_1_
+    {
+        public class __Click__print_Button_ : IElementDescriptor
+        {
+            private readonly IScreenDescriptor _screenDescriptor;
+            private readonly IElementDescriptor _parentElementDescriptor;
+            private readonly IElementDescriptorDefinition _elementDescriptor;
+
+            public IElementDescriptorDefinition GetDefinition()
+            {
+                return _elementDescriptor;
+            }
+
+            public __Click__print_Button_(IScreenDescriptor screenDescriptor, IElementDescriptor parentElementDescriptor)
+            {
+                _screenDescriptor = screenDescriptor;
+                _parentElementDescriptor = parentElementDescriptor;
+                _elementDescriptor = new ElementDescriptorDefinition
+                {
+                    Reference = "KufmkzIlJkuDJlbts6D-4A/4CZYqYbIf0SxwDP0faI4BA",
+                    DisplayName = "Click 'print Button'",
+                    Element = this,
+                    ParentElement = _parentElementDescriptor,
+                    Screen = screenDescriptor
+                };
+            }
+        }
+    }
+
+    namespace _New_application_App
+    {
+        public class __New_application_1_ : IScreenDescriptor
+        {
+            public IScreenDescriptorDefinition GetDefinition()
+            {
+                return _screenDescriptor;
+            }
+
+            private readonly ScreenDescriptorDefinition _screenDescriptor;
+
+            public __New_application_1_()
+            {
+                _screenDescriptor = new ScreenDescriptorDefinition
+                {
+                    Reference = "KufmkzIlJkuDJlbts6D-4A/dF3WEhGAekOJuA6Kf1B8mw",
+                    DisplayName = "New application(1)",
+                    Screen = this
+                };
+                Click__print_Button_ = new _Implementation._New_application_App._New_application_1_.__Click__print_Button_(this, null);
+            }
+
+            public _Implementation._New_application_App._New_application_1_.__Click__print_Button_ Click__print_Button_ { get; private set; }
         }
     }
 

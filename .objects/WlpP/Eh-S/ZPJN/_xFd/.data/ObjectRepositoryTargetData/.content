@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="pvUCmYzYtkipZpq9LkSPbA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="YGXpZFwNj0ahWqJsRSdayQ" Reference="KufmkzIlJkuDJlbts6D-4A/_xFdVM8D5Emq6rlSBRwiRg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="446, 147, 35, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Detailed Declaration - View [2026]' role='internal frame' /&gt;&lt;java cls='KToolBar' role='tool bar' /&gt;&lt;java idx='17' role='push button' /&gt;" Guid="6da032ca-f907-43a7-8dd7-499e380cc1aa" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="299026f7144544b5671a0414c338a0f9.jpg" xmlns="">0TDdL88Zch0-kC924LEXSiw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="376, 147, 35, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Detailed Declaration - View [*]' role='internal frame' /&gt;&lt;java cls='KToolBar' role='tool bar' /&gt;&lt;java idx='13' role='push button' /&gt;" Guid="d26a9ed7-6bf5-450f-a9a1-c79618aee827" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5d7f38ae82f3d3c003fc8a669b7cc743.jpg" xmlns="">03VZdQIolAUaVVpBMGThMoA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
