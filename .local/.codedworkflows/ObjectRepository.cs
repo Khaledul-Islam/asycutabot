@@ -283,6 +283,35 @@ namespace asycutabot._Implementation
 
     namespace ___ASYCUDAWorld._ASYCUDAWorld
     {
+        public class __Click_Tick : IElementDescriptor
+        {
+            private readonly IScreenDescriptor _screenDescriptor;
+            private readonly IElementDescriptor _parentElementDescriptor;
+            private readonly IElementDescriptorDefinition _elementDescriptor;
+
+            public IElementDescriptorDefinition GetDefinition()
+            {
+                return _elementDescriptor;
+            }
+
+            public __Click_Tick(IScreenDescriptor screenDescriptor, IElementDescriptor parentElementDescriptor)
+            {
+                _screenDescriptor = screenDescriptor;
+                _parentElementDescriptor = parentElementDescriptor;
+                _elementDescriptor = new ElementDescriptorDefinition
+                {
+                    Reference = "KufmkzIlJkuDJlbts6D-4A/5DKM0OMLHUy7Qo30XwkehQ",
+                    DisplayName = "Click Tick",
+                    Element = this,
+                    ParentElement = _parentElementDescriptor,
+                    Screen = screenDescriptor
+                };
+            }
+        }
+    }
+
+    namespace ___ASYCUDAWorld._ASYCUDAWorld
+    {
         public class __Close : IElementDescriptor
         {
             private readonly IScreenDescriptor _screenDescriptor;
@@ -1236,6 +1265,7 @@ namespace asycutabot._Implementation
                 Click__forward_button_ = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Click__forward_button_(this, null);
                 Click__push_button_ = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Click__push_button_(this, null);
                 Click_row_in_detailed_declaration = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Click_row_in_detailed_declaration(this, null);
+                Click_Tick = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Click_Tick(this, null);
                 Close = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Close(this, null);
                 Close_1_ = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Close_1_(this, null);
                 Close_2_ = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Close_2_(this, null);
@@ -1278,6 +1308,7 @@ namespace asycutabot._Implementation
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Click__forward_button_ Click__forward_button_ { get; private set; }
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Click__push_button_ Click__push_button_ { get; private set; }
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Click_row_in_detailed_declaration Click_row_in_detailed_declaration { get; private set; }
+            public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Click_Tick Click_Tick { get; private set; }
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Close Close { get; private set; }
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Close_1_ Close_1_ { get; private set; }
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Close_2_ Close_2_ { get; private set; }

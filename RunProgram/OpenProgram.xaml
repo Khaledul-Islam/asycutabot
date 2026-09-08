@@ -74,7 +74,6 @@
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
-      <AssemblyReference>asycutabot.Core</AssemblyReference>
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
       <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
@@ -149,6 +148,7 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>asycutabot.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -157,7 +157,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="OpenProgram" sap:VirtualizedContainerService.HintSize="778.8000000000001,11435.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OpenProgram" sap:VirtualizedContainerService.HintSize="778.8000000000001,2788.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
         <sap:WorkflowViewStateService.ViewState>
@@ -475,19 +475,19 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence DisplayName="Sequence -  Open AsyCuda" sap:VirtualizedContainerService.HintSize="624,11298.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence -  Open AsyCuda" sap:VirtualizedContainerService.HintSize="624,2652" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table LC List" sap:VirtualizedContainerService.HintSize="590.4,11215.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table LC List" sap:VirtualizedContainerService.HintSize="590.4,2568.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="LCROW" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="588.8,11042.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="588.8,2396" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="lcno" />
               </Sequence.Variables>
@@ -508,13 +508,13 @@
                   </InArgument>
                 </Assign.Value>
               </Assign>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ASYCUDAWorld" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="555.2,10808" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ASYCUDAWorld" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="555.2,2161.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V2" WindowResize="Maximize">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,10561.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,1915.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="sd:DataTable" Name="out_lstLcWriteOff" />
                         <Variable x:TypeArguments="scg:List(am:LcWriteOff)" Name="lstLcWriteOff" />
@@ -676,7 +676,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="de98df73-e3c9-4cb1-95fc-cad04bb3a4ca" DisplayName="CV Screen Scope 'scroll pane'" sap:VirtualizedContainerService.HintSize="520,9205.6" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                      <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="de98df73-e3c9-4cb1-95fc-cad04bb3a4ca" DisplayName="CV Screen Scope 'scroll pane'" sap:VirtualizedContainerService.HintSize="520,559.2" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                         <p:CVScope.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
@@ -688,7 +688,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <p:CvExtractDataTableWithDescriptor InRegion="{x:Null}" ScrollOffset="{x:Null}" AddHeaders="True" DelayScreenshotAfterScroll="250" DesignTimeCacheId="de98df73-e3c9-4cb1-95fc-cad04bb3a4ca" DesignTimeScaleFactor="1.25" DisplayName="CV Extract Table - Table" sap:VirtualizedContainerService.HintSize="486.4,223.2" sap2010:WorkflowViewState.IdRef="CvExtractDataTableWithDescriptor_1" IgnoreEmptyRows="False" InformativeScreenshot="08f22c794a08fbc49bbf0e2de10a8e29" MaxTableScrollHeightInPixels="30000" NumberOfScrolls="2" RefreshBefore="True" Scroll="False" ScrollDirection="None" Version="V6">
+                              <p:CvExtractDataTableWithDescriptor InRegion="{x:Null}" ScrollOffset="{x:Null}" AddHeaders="True" DelayScreenshotAfterScroll="250" DesignTimeCacheId="de98df73-e3c9-4cb1-95fc-cad04bb3a4ca" DesignTimeScaleFactor="1.25" DisplayName="CV Extract Table - Table" sap:VirtualizedContainerService.HintSize="400,56.8" sap2010:WorkflowViewState.IdRef="CvExtractDataTableWithDescriptor_1" IgnoreEmptyRows="False" InformativeScreenshot="08f22c794a08fbc49bbf0e2de10a8e29" MaxTableScrollHeightInPixels="30000" NumberOfScrolls="2" RefreshBefore="True" Scroll="False" ScrollDirection="None" Version="V6">
                                 <p:CvExtractDataTableWithDescriptor.Descriptor>
                                   <InArgument x:TypeArguments="uc:CvDescriptor">
                                     <CSharpValue x:TypeArguments="uc:CvDescriptor" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">"Target: Table (0,0,620,237)"</CSharpValue>
@@ -708,12 +708,12 @@
                                 </p:CvExtractDataTableWithDescriptor.Result>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </p:CvExtractDataTableWithDescriptor>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.5" DelayBefore="0.5" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V5">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.5" DelayBefore="0.5" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="400,56.8" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable ContentHash="QvqjAbBOQU-dbu-0-_JpeQ" DesignTimeRectangle="1351, 148, 16, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Letter of Credit - View [*]' role='internal frame' /&gt;&lt;java hasTableAncestor='0' name='Close' role='push button' /&gt;" Guid="ebf77e7c-3d2a-4920-9c7f-d37093cad202" InformativeScreenshot="c7b8dc2dea3d643f48242dbfd0ca6d20.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/5eSxpcfsZUGOgfVf-027bg" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NClick.Target>
@@ -724,7 +724,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NClick>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.5" DelayBefore="0.5" DisplayName="Click 'Close LC Finder'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V5">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.5" DelayBefore="0.5" DisplayName="Click 'Close LC Finder'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="400,56.8" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V5">
                                 <uix:NClick.OutUiElement>
                                   <OutArgument x:TypeArguments="ui:UiElement">
                                     <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">outputElement</CSharpReference>
@@ -740,13 +740,13 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NClick>
-                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table - Write Off" sap:VirtualizedContainerService.HintSize="486.4,8528" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table - Write Off" sap:VirtualizedContainerService.HintSize="400,48" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                                 <ui:ForEachRow.Body>
                                   <ActivityAction x:TypeArguments="sd:DataRow">
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="WRITEOFFROW" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,8355.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,8999.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:String" Name="OfficeCode" />
                                         <Variable x:TypeArguments="x:String" Name="RegistrationYear" />
@@ -1015,7 +1015,7 @@
                                         <uix:NClick.VerifyOptions>
                                           <uix:VerifyExecutionOptions Mode="Appears">
                                             <uix:VerifyExecutionOptions.Target>
-                                              <uix:TargetAnchorable ContentHash="PEQJmm2CIkyDxkmKv4ki9Q" DesignTimeRectangle="9, 38, 531, 176" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java cls='JPanel' idx='2' role='panel' /&gt;" Guid="3835be91-5222-4931-a3c9-90c34ff9e922" InformativeScreenshot="67d6f4bb6edc216d390091faef75b5ec.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/4CZYqYbIf0SxwDP0faI4BA" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtDialog' title='Transaction completed' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                              <uix:TargetAnchorable ContentHash="V8i3VmRITUSd4EFwvrssIA" DesignTimeRectangle="9, 38, 531, 176" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java cls='JPanel' idx='2' role='panel' /&gt;" Guid="3835be91-5222-4931-a3c9-90c34ff9e922" InformativeScreenshot="a47dcb667b0ed66c7921dfb1fda8a9f8.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/4CZYqYbIf0SxwDP0faI4BA" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtDialog' title='Transaction completed' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                             </uix:VerifyExecutionOptions.Target>
                                             <uix:VerifyExecutionOptions.Timeout>
                                               <InArgument x:TypeArguments="x:Double" />
@@ -1023,11 +1023,18 @@
                                           </uix:VerifyExecutionOptions>
                                         </uix:NClick.VerifyOptions>
                                       </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Tick" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V5">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable ContentHash="ycN07r3fmUuZwHdnuPYBbA" DesignTimeRectangle="467, 176, 29, 28" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java role='push button' /&gt;" Guid="b6d557e6-289a-4e4b-844a-08a59f673eae" InformativeScreenshot="1941a0b7d3ccc4017c19b60b331b23ae.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/5DKM0OMLHUy7Qo30XwkehQ" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtDialog' title='Transaction completed' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
                                       <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.5" DelayBefore="0.5" DisplayName="Click 'Print'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable ContentHash="dTFG-UC28ESn_ooe-PSljg" DesignTimeRectangle="418, 373, 61, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Print' role='push button' /&gt;" Guid="26bd838c-8d17-4a94-be93-681941c6fc09" ImageAccuracyArgument="0.7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD0AAAAaCAYAAAAEy1RnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEXSURBVFhH7ZWxDoMgEEDvjzThU4hD/Q4HJ5f+Qh3o6NjRydkvsJOd2w+5BhAVpG00mkaE5A3cneTeiRGutxqPxP3xQjCDrqNJu76UMF+aNA+6ytjTS5uFLuGlvbSl2BVWl27aAikAggZBmsrfhI2GxaKOsuckZ1KyDGlaTOJz2E46ko01bY15JMWT6rfUN8yzl7K5tIhVGQYAGKT1kA+JiAHEeDmf+jfd10Yx0nC4JXx4idh3hBmW7bIh/k8aYsy7psfXW9VKKSUqa21nL2FzafN6m3lRY5HmA+I5+exepDUIUiYlbI27I/2hMVveS3tpXZrvy5R0n8wQm8vq0nvAS3tpS7EreGm1OQqa9HgaLiOk1es/0noDifagQiXDWGUAAAAASUVORK5CYII=" InformativeScreenshot="e6fe743c1aaea7f18404c3911ac4d061.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/pViiNGFkc0epvHVmD3k-hw" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtDialog' title='Print' /&gt;" SearchSteps="Selector, Image" Version="V6" WaitForReadyArgument="Interactive" />
                                         </uix:NClick.Target>
                                       </uix:NClick>
+                                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,256.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_13" InteractionMode="HardwareEvents" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Shortcuts="[d(hk)][d(ctrl)]s[u(ctrl)][u(hk)]" Version="V5" />
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_36" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V5" />
                                       <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.5" DelayBefore="0.5" DisplayName="Click 'System'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_27" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable ContentHash="i3CuvL-PakCSNn_4xmkH9Q" DesignTimeRectangle="0, 0, 960, 600" ElementVisibilityArgument="Interactive" Guid="e8070da8-9231-45ae-9970-56b7d2e08e14" InformativeScreenshot="ec2cd36e498d6e01efa57434384800d9.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/Z9lhqI7CQkKqk0wwLAo2tQ" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='#32770' title='Save Print Output As' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
@@ -1093,8 +1100,8 @@
                                 </ui:ForEachRow.DataTable>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:ForEachRow>
@@ -1264,7 +1271,7 @@
                             <ActivityFunc.Argument>
                               <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
                             </ActivityFunc.Argument>
-                            <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="486.4,24.8" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" NoopExecution="False">
+                            <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="400,24.8" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" NoopExecution="False">
                               <ui:GoogleOCR.Image>
                                 <InArgument x:TypeArguments="sd1:Image">
                                   <CSharpValue x:TypeArguments="sd1:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">Image</CSharpValue>
