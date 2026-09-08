@@ -2,6 +2,19 @@
   "Version": "1.0",
   "Metadata": [
     {
+      "ApplicationType": "Chrome",
+      "ExecutablePath": {
+        "Value": "chrome.exe",
+        "IsExpression": false
+      },
+      "Url": {
+        "Value": "\"file:///C:/Users/ADMINI~1/AppData/Local/Temp/*.pdf\"",
+        "IsExpression": false
+      },
+      "Arguments": null,
+      "Version": null
+    },
+    {
       "ApplicationType": "WindowsApplication",
       "ExecutablePath": {
         "Value": "jp2launcher.exe",

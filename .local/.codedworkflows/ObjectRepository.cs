@@ -10,6 +10,12 @@ namespace asycutabot.ObjectRepository
             public static _Implementation.___ASYCUDAWorld.__ASYCUDAWorld ASYCUDAWorld { get; private set; } = new _Implementation.___ASYCUDAWorld.__ASYCUDAWorld();
         }
 
+        public static class __Chrome__pdf
+        {
+            static string _reference = "KufmkzIlJkuDJlbts6D-4A/S1l6lLF9m0Wg3n1yYsz5Og";
+            public static _Implementation.___Chrome__pdf.__Chrome__pdf Chrome__pdf { get; private set; } = new _Implementation.___Chrome__pdf.__Chrome__pdf();
+        }
+
         public static class __Chrome_New_Tab
         {
             static string _reference = "KufmkzIlJkuDJlbts6D-4A/4UaHeTfKWkWDMzdi3sOmbw";
@@ -1182,6 +1188,35 @@ namespace asycutabot._Implementation
 
     namespace ___ASYCUDAWorld._ASYCUDAWorld
     {
+        public class __table_2_ : IElementDescriptor
+        {
+            private readonly IScreenDescriptor _screenDescriptor;
+            private readonly IElementDescriptor _parentElementDescriptor;
+            private readonly IElementDescriptorDefinition _elementDescriptor;
+
+            public IElementDescriptorDefinition GetDefinition()
+            {
+                return _elementDescriptor;
+            }
+
+            public __table_2_(IScreenDescriptor screenDescriptor, IElementDescriptor parentElementDescriptor)
+            {
+                _screenDescriptor = screenDescriptor;
+                _parentElementDescriptor = parentElementDescriptor;
+                _elementDescriptor = new ElementDescriptorDefinition
+                {
+                    Reference = "KufmkzIlJkuDJlbts6D-4A/1lALi2qmvEGt_e57ajRF6w",
+                    DisplayName = "table(2)",
+                    Element = this,
+                    ParentElement = _parentElementDescriptor,
+                    Screen = screenDescriptor
+                };
+            }
+        }
+    }
+
+    namespace ___ASYCUDAWorld._ASYCUDAWorld
+    {
         public class __Write_off_Details : IElementDescriptor
         {
             private readonly IScreenDescriptor _screenDescriptor;
@@ -1296,6 +1331,7 @@ namespace asycutabot._Implementation
                 System = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__System(this, null);
                 table = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__table(this, null);
                 table_1_ = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__table_1_(this, null);
+                table_2_ = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__table_2_(this, null);
                 Write_off_Details = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Write_off_Details(this, null);
                 XXXXXXXX26060036 = new _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__XXXXXXXX26060036(this, null);
             }
@@ -1339,8 +1375,64 @@ namespace asycutabot._Implementation
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__System System { get; private set; }
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__table table { get; private set; }
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__table_1_ table_1_ { get; private set; }
+            public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__table_2_ table_2_ { get; private set; }
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__Write_off_Details Write_off_Details { get; private set; }
             public _Implementation.___ASYCUDAWorld._ASYCUDAWorld.__XXXXXXXX26060036 XXXXXXXX26060036 { get; private set; }
+        }
+    }
+
+    namespace ___Chrome__pdf._Chrome__pdf
+    {
+        public class __PDF_27683776821018774310 : IElementDescriptor
+        {
+            private readonly IScreenDescriptor _screenDescriptor;
+            private readonly IElementDescriptor _parentElementDescriptor;
+            private readonly IElementDescriptorDefinition _elementDescriptor;
+
+            public IElementDescriptorDefinition GetDefinition()
+            {
+                return _elementDescriptor;
+            }
+
+            public __PDF_27683776821018774310(IScreenDescriptor screenDescriptor, IElementDescriptor parentElementDescriptor)
+            {
+                _screenDescriptor = screenDescriptor;
+                _parentElementDescriptor = parentElementDescriptor;
+                _elementDescriptor = new ElementDescriptorDefinition
+                {
+                    Reference = "KufmkzIlJkuDJlbts6D-4A/d8UlX1f8HUe_uTDi2tMFqg",
+                    DisplayName = "PDF_27683776821018774310",
+                    Element = this,
+                    ParentElement = _parentElementDescriptor,
+                    Screen = screenDescriptor
+                };
+            }
+        }
+    }
+
+    namespace ___Chrome__pdf
+    {
+        public class __Chrome__pdf : IScreenDescriptor
+        {
+            public IScreenDescriptorDefinition GetDefinition()
+            {
+                return _screenDescriptor;
+            }
+
+            private readonly ScreenDescriptorDefinition _screenDescriptor;
+
+            public __Chrome__pdf()
+            {
+                _screenDescriptor = new ScreenDescriptorDefinition
+                {
+                    Reference = "KufmkzIlJkuDJlbts6D-4A/W3Jdre1WeEq3C-OxeMdbeg",
+                    DisplayName = "Chrome .pdf",
+                    Screen = this
+                };
+                PDF_27683776821018774310 = new _Implementation.___Chrome__pdf._Chrome__pdf.__PDF_27683776821018774310(this, null);
+            }
+
+            public _Implementation.___Chrome__pdf._Chrome__pdf.__PDF_27683776821018774310 PDF_27683776821018774310 { get; private set; }
         }
     }
 

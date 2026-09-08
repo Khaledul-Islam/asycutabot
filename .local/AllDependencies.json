@@ -23011,7 +23011,7 @@
   "projectFileDependencyGroups": {
     "": [],
     "net8.0-windows7.0": [
-      "UiPath.CoreIPC >= 2.5.0 <= 2.5.0",
+      "UiPath.CoreIPC >= 2.5.0",
       "UiPath.Excel.Activities >= 3.6.0-preview <= 3.6.0-preview",
       "UiPath.MicrosoftOffice365.Activities >= 3.11.10 <= 3.11.10",
       "UiPath.System.Activities >= 26.6.2 <= 26.6.2",
@@ -23043,7 +23043,7 @@
           "UiPath.CoreIPC": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[2.5.0, 2.5.0]"
+            "version": "[2.5.0, )"
           },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
@@ -23066,7 +23066,7 @@
             "version": "[26.10.2, 26.10.2]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPathPlatform\\Studio\\26.0.201-cloud.24739\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPathPlatform\\Studio\\26.0.201-cloud.24739\\SolutionPackager\\Tools\\WorkflowCompiler\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

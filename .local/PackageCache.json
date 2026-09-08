@@ -3,7 +3,7 @@
     {
       "Package": {
         "Id": "UiPath.CoreIPC",
-        "Version": "[2.5.0]"
+        "Version": "2.5.0"
       },
       "Assemblies": [],
       "Path": null
