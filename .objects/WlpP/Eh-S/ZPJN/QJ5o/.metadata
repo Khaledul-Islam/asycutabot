@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Address Desktop",
+  "Type": "Element",
+  "Id": "QJ5oeq18j0yAeTpSWJmbww",
+  "Reference": "KufmkzIlJkuDJlbts6D-4A/QJ5oeq18j0yAeTpSWJmbww",
+  "ParentRef": "KufmkzIlJkuDJlbts6D-4A/ZPJNQ8Vc-UaAYhjNZoIlhg",
+  "Created": "2026-09-03T14:20:49.9375232Z",
+  "Updated": "2026-09-03T14:20:49.9375232Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

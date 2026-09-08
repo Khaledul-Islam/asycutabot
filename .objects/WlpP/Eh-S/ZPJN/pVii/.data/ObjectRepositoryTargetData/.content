@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dTFG-UC28ESn_ooe-PSljg" Reference="KufmkzIlJkuDJlbts6D-4A/pViiNGFkc0epvHVmD3k-hw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="418, 373, 61, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Print' role='push button' /&gt;" Guid="26bd838c-8d17-4a94-be93-681941c6fc09" ImageAccuracyArgument="0.7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD0AAAAaCAYAAAAEy1RnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEXSURBVFhH7ZWxDoMgEEDvjzThU4hD/Q4HJ5f+Qh3o6NjRydkvsJOd2w+5BhAVpG00mkaE5A3cneTeiRGutxqPxP3xQjCDrqNJu76UMF+aNA+6ytjTS5uFLuGlvbSl2BVWl27aAikAggZBmsrfhI2GxaKOsuckZ1KyDGlaTOJz2E46ko01bY15JMWT6rfUN8yzl7K5tIhVGQYAGKT1kA+JiAHEeDmf+jfd10Yx0nC4JXx4idh3hBmW7bIh/k8aYsy7psfXW9VKKSUqa21nL2FzafN6m3lRY5HmA+I5+exepDUIUiYlbI27I/2hMVveS3tpXZrvy5R0n8wQm8vq0nvAS3tpS7EreGm1OQqa9HgaLiOk1es/0noDifagQiXDWGUAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtDialog' title='Print' /&gt;" SearchSteps="Selector, Image" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e6fe743c1aaea7f18404c3911ac4d061.jpg" xmlns="">0RXyx7io7BEOWGpVpnBSoIg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+{
+  "Version": "1.0",
+  "IncludeWorkflows": [
+    "Main.xaml",
+    "Helper/ConfigReader.xaml",
+    "ReadExcelFile/ExcelFileData.xaml",
+    "RunProgram/OpenProgram.xaml"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QvqjAbBOQU-dbu-0-_JpeQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1351, 148, 16, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Letter of Credit - View [*]' role='internal frame' /&gt;&lt;java hasTableAncestor='0' name='Close' role='push button' /&gt;" Guid="ebf77e7c-3d2a-4920-9c7f-d37093cad202" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c7b8dc2dea3d643f48242dbfd0ca6d20.jpg" xmlns="">0UCJOdXlLyE64hAJWjGnD_g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

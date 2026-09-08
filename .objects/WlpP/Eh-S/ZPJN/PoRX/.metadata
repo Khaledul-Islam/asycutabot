@@ -1,0 +1,13 @@
+﻿{
+  "Name": "All locations Desktop",
+  "Type": "Element",
+  "Id": "PoRXOsMqykGFSKdeptcK5g",
+  "Reference": "KufmkzIlJkuDJlbts6D-4A/PoRXOsMqykGFSKdeptcK5g",
+  "ParentRef": "KufmkzIlJkuDJlbts6D-4A/ZPJNQ8Vc-UaAYhjNZoIlhg",
+  "Created": "2026-09-03T14:22:27.191244Z",
+  "Updated": "2026-09-03T14:22:27.191244Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

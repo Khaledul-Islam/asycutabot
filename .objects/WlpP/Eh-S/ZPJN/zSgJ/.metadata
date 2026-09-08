@@ -1,0 +1,14 @@
+﻿{
+  "Name": "LC Number",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "zSgJ3gmY40eBDbnIZwTuyQ",
+  "Reference": "KufmkzIlJkuDJlbts6D-4A/zSgJ3gmY40eBDbnIZwTuyQ",
+  "ParentRef": "KufmkzIlJkuDJlbts6D-4A/ZPJNQ8Vc-UaAYhjNZoIlhg",
+  "Created": "2026-08-23T12:21:53.3671502Z",
+  "Updated": "2026-08-23T12:21:53.3671502Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

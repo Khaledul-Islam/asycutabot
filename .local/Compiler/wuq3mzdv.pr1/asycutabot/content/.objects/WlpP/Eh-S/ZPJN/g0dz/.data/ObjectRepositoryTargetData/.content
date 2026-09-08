@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LhbLVJX8j0Kwdpa7I_NB5w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="a4c5fedf-612e-45ee-95f1-03af2bdf7914" CvElementArea="392, 306, 17, 17" CvTextArea="261, 307, 16, 12" CvTextArgument="all" CvType="ArrowButton" DesignTimeRectangle="261, 306, 148, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Letter of Credit finder' role='internal frame' /&gt;&lt;java cls='CriteriaTable' hasTableAncestor='0' role='table' /&gt;&lt;java role='combo box' tableCol='1' tableRow='0' /&gt;&lt;java role='push button' /&gt;" Guid="db0c364f-9ec1-4c86-8176-c10d096fa165" ImageAccuracyArgument="0.64" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJQAAAAQCAYAAADwHVYaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADtSURBVGhD7daxDYMwEIXh2wgkj2LRMAeFK7agIGXKlFTUTEAqUidzkIsOgxTsEIRw51d8kiWO7tfZdLl1DBAKjeN7OtwfL4BTEBQEhaAgqENB9XXORMS6fq7O7hzEC0FBUD+DakzOCdEUDJFibew3BBUn28E+mfWC6tuSE1JctDaUKpPhnKthHRGCiosbj2uZ84IS/dBxZUrWqZp/sIEhqLi5EbkxCS8ou6GIKc25qLt5QyEosP7FJLygGiNbCVcebNuKSWwENUfTXlnjyoMDvKDk/VSky0pTrLOvwBAU7PCCAjgDQUFQCAqCko4+FWSaDXbGBagAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="06e58aa8a2f1346e9d7ec3667b91dbbb.jpg" xmlns="">0MMNwaBvkWEeBZSYVc_XyDw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

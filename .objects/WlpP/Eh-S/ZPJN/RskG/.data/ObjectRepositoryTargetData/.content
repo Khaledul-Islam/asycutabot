@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gTQOtMcn9k6Ba6C_F6mkxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="109, 194, 600, 400" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Letter of Credit finder' role='internal frame' /&gt;" Guid="0c2402b4-5b34-44e6-894f-d2be9d7b5b0a" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4348c829acdac7b755cecb0e8d2bd01f.jpg" xmlns="">0UxIlORviAEeZ6ZK26VP-gA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

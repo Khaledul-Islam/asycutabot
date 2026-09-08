@@ -1,0 +1,14 @@
+﻿{
+  "Name": "push button(2)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "9BP_SyxY3kq4XJTkiePLuA",
+  "Reference": "KufmkzIlJkuDJlbts6D-4A/9BP_SyxY3kq4XJTkiePLuA",
+  "ParentRef": "KufmkzIlJkuDJlbts6D-4A/ZPJNQ8Vc-UaAYhjNZoIlhg",
+  "Created": "2026-08-27T12:36:32.1608294Z",
+  "Updated": "2026-08-27T12:36:32.1608294Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

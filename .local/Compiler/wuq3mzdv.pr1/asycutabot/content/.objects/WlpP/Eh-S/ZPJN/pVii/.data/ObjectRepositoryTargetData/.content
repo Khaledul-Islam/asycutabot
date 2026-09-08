@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YHjJZCshwUybrcIhMuyIVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="418, 373, 61, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Print' role='push button' /&gt;" Guid="26bd838c-8d17-4a94-be93-681941c6fc09" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtDialog' title='Print' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6c615f6abbcd1430d6a89c84dcf779b3.jpg" xmlns="">0pVFwKoUCdUmP5eLs_0aKdA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

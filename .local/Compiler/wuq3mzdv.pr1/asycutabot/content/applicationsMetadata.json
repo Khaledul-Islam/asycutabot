@@ -1,0 +1,18 @@
+﻿{
+  "Version": "1.0",
+  "Metadata": [
+    {
+      "ApplicationType": "WindowsApplication",
+      "ExecutablePath": {
+        "Value": "jp2launcher.exe",
+        "IsExpression": false
+      },
+      "Url": null,
+      "Arguments": {
+        "Value": "-secure -javaws -jre \"C:\\Program Files\\Java\\jre1.8.0_503\" -vma LWNsYXNzcGF0aABDOlxQcm9ncmFtIEZpbGVzXEphdmFcanJlMS44LjBfNTAzXGxpYlxkZXBsb3kuamFyAC1EamF2YS5zZWN1cml0eS5wb2xpY3k9ZmlsZTpDOlxQcm9ncmFtIEZpbGVzXEphdmFcanJlMS44LjBfNTAzXGxpYlxzZWN1cml0eVxqYXZhd3MucG9saWN5AC1EdHJ1c3RQcm94eT10cnVlAC1YdmVyaWZ5OnJlbW90ZQAtRGpubHB4LmhvbWU9QzpcUHJvZ3JhbSBGaWxlc1xKYXZhXGpyZTEuOC4wXzUwM1xiaW4ALURqYXZhLnNlY3VyaXR5Lm1hbmFnZXIALURqbmxweC5vcmlnRmlsZW5hbWVBcmc9QzpcVXNlcnNcQWRtaW5pc3RyYXRvclxEb3dubG9hZHNcQVc0MzNfU08yMjUxXzJGQS5qbmxwAC1Eam5scHgucmVtb3ZlPWZhbHNlAC1Ec3VuLmF3dC53YXJtdXA9dHJ1ZQAtWGJvb3RjbGFzc3BhdGgvYTpDOlxQcm9ncmFtIEZpbGVzXEphdmFcanJlMS44LjBfNTAzXGxpYlxqYXZhd3MuamFyO0M6XFByb2dyYW0gRmlsZXNcSmF2YVxqcmUxLjguMF81MDNcbGliXGRlcGxveS5qYXI7QzpcUHJvZ3JhbSBGaWxlc1xKYXZhXGpyZTEuOC4wXzUwM1xsaWJccGx1Z2luLmphcgAtRGphdmEubmV0LnByZWZlcklQdjRTdGFjaz10cnVlAC1YbXMyMDAwbQAtWG14NDAwMG0ALURqbmxweC5oZWFwc2l6ZT0yMDAwbSw0MDAwbQAtRGpubHB4LnNwbGFzaHBvcnQ9NjIwMDkALURqbmxweC5qdm09QzpcUHJvZ3JhbSBGaWxlc1xKYXZhXGpyZTEuOC4wXzUwM1xiaW5camF2YXcuZXhlAC1Eam5scHgudm1hcmdzPUxVUnFZWFpoTG01bGRDNXdjbVZtWlhKSlVIWTBVM1JoWTJzOWRISjFaUUE9 -ma QzpcVXNlcnNcQWRtaW5pc3RyYXRvclxEb3dubG9hZHNcQVc0MzNfU08yMjUxXzJGQS5qbmxw",
+        "IsExpression": false
+      },
+      "Version": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Use Application ",
+  "Type": "Screen",
+  "Id": "rXlqVwV0BUO6FRpey0vI4A",
+  "Reference": "KufmkzIlJkuDJlbts6D-4A/rXlqVwV0BUO6FRpey0vI4A",
+  "ParentRef": "KufmkzIlJkuDJlbts6D-4A/QFRfrlVa6Uy9lolirKH2jQ",
+  "Created": "2026-09-02T15:04:30.8729864Z",
+  "Updated": "2026-09-02T15:04:30.8729864Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

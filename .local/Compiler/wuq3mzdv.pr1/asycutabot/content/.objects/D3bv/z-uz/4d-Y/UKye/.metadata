@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click 'push button(7)'",
+  "Type": "Element",
+  "Id": "UKye_c_dEUW8pHK2Ge-_hA",
+  "Reference": "KufmkzIlJkuDJlbts6D-4A/UKye_c_dEUW8pHK2Ge-_hA",
+  "ParentRef": "KufmkzIlJkuDJlbts6D-4A/4d-YO6cHn0uhve1CY9_4cg",
+  "Created": "2026-09-02T14:31:46.3006935Z",
+  "Updated": "2026-09-02T14:31:46.3006935Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

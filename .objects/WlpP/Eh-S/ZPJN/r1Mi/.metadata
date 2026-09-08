@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Write off Details",
+  "Type": "Element",
+  "Id": "r1MiZSTzukaeNp_qytQ0bw",
+  "Reference": "KufmkzIlJkuDJlbts6D-4A/r1MiZSTzukaeNp_qytQ0bw",
+  "ParentRef": "KufmkzIlJkuDJlbts6D-4A/ZPJNQ8Vc-UaAYhjNZoIlhg",
+  "Created": "2026-09-02T08:31:33.7556516Z",
+  "Updated": "2026-09-02T08:31:33.7556516Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

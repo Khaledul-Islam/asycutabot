@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click 'forward button'",
+  "Type": "Element",
+  "Id": "RskGlKeJzkyu2K0DSGrHpg",
+  "Reference": "KufmkzIlJkuDJlbts6D-4A/RskGlKeJzkyu2K0DSGrHpg",
+  "ParentRef": "KufmkzIlJkuDJlbts6D-4A/ZPJNQ8Vc-UaAYhjNZoIlhg",
+  "Created": "2026-08-23T12:21:25.4006484Z",
+  "Updated": "2026-08-23T12:21:25.4006484Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Forward Button",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "SsIv-KCUOkS7v1P5kzO4sg",
+  "Reference": "KufmkzIlJkuDJlbts6D-4A/SsIv-KCUOkS7v1P5kzO4sg",
+  "ParentRef": "KufmkzIlJkuDJlbts6D-4A/ZPJNQ8Vc-UaAYhjNZoIlhg",
+  "Created": "2026-08-19T12:29:33.5881126Z",
+  "Updated": "2026-08-23T12:16:41.354454Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
