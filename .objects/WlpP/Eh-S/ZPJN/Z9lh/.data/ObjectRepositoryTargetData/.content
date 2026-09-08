@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="i3CuvL-PakCSNn_4xmkH9Q" Reference="KufmkzIlJkuDJlbts6D-4A/Z9lhqI7CQkKqk0wwLAo2tQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="0, 0, 960, 600" ElementVisibilityArgument="Interactive" Guid="e8070da8-9231-45ae-9970-56b7d2e08e14" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='#32770' title='Save Print Output As' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="ec2cd36e498d6e01efa57434384800d9.jpg" xmlns="">061XENzRFHkecpRLWYnoksQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>
