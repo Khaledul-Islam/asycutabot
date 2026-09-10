@@ -1,0 +1,288 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CloseAsycudaModal" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>asycutabot.Core</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Close Asycuda Modal" sap:VirtualizedContainerService.HintSize="556.8,1300" sap2010:WorkflowViewState.IdRef="Sequence_100">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="recoveryCount" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="521.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_100" Level="Warn">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_106">"Attempting to close any open ASYCUDAWorld Close/Cancel modal(s) before continuing the loop."</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ASYCUDAWorld" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,1080" sap2010:WorkflowViewState.IdRef="NApplicationCard_100" ScopeGuid="b6b7a0b0-2f56-4b64-9dc0-2a6b6a2f0a11" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,900" sap2010:WorkflowViewState.IdRef="Sequence_101">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="Assign_100">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">
+                  <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_100">recoveryCount</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">0</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While Close/Cancel Buttons Exist" sap:VirtualizedContainerService.HintSize="486.4,600" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_100">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,500" sap2010:WorkflowViewState.IdRef="Sequence_102">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="closeButtons" />
+                    <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="cancelButtons" />
+                    <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="modalButtons" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:FindChildren ContinueOnError="True" DisplayName="Find Children 'Close'" Filter="&lt;java name='Close' role='push button' /&gt;" sap:VirtualizedContainerService.HintSize="451.2,139.2" sap2010:WorkflowViewState.IdRef="FindChildren_100" Scope="FIND_DESCENDANTS">
+                    <ui:FindChildren.Children>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
+                        <CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_101">closeButtons</CSharpReference>
+                      </OutArgument>
+                    </ui:FindChildren.Children>
+                    <ui:FindChildren.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c1c7a1d2-9f2a-4a7a-8f0a-1a2b3c4d5e01" Selector="&lt;java cls='KDesktopPaneImpl' role='desktop pane' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:FindChildren.Target>
+                  </ui:FindChildren>
+                  <ui:FindChildren ContinueOnError="True" DisplayName="Find Children 'Cancel'" Filter="&lt;java name='Cancel' role='push button' /&gt;" sap:VirtualizedContainerService.HintSize="451.2,139.2" sap2010:WorkflowViewState.IdRef="FindChildren_101" Scope="FIND_DESCENDANTS">
+                    <ui:FindChildren.Children>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
+                        <CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_102">cancelButtons</CSharpReference>
+                      </OutArgument>
+                    </ui:FindChildren.Children>
+                    <ui:FindChildren.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c1c7a1d2-9f2a-4a7a-8f0a-1a2b3c4d5e02" Selector="&lt;java cls='KDesktopPaneImpl' role='desktop pane' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:FindChildren.Target>
+                  </ui:FindChildren>
+                  <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_101">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
+                        <CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_103">modalButtons</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
+                        <CSharpValue x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">(closeButtons ?? Enumerable.Empty&lt;UiElement&gt;()).Concat(cancelButtons ?? Enumerable.Empty&lt;UiElement&gt;())</CSharpValue>
+                      </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <If sap:VirtualizedContainerService.HintSize="451.2,933.6" sap2010:WorkflowViewState.IdRef="If_100">
+                    <If.Condition>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">modalButtons.Any()</CSharpValue>
+                      </InArgument>
+                    </If.Condition>
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,696" sap2010:WorkflowViewState.IdRef="Sequence_103">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="ui:UiElement" Name="modalBtn" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_102">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="ui:UiElement">
+                              <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_104">modalBtn</CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="ui:UiElement">
+                              <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">modalButtons.First()</CSharpValue>
+                            </InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click Close/Cancel" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="NClick_100" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b6b7a0b0-2f56-4b64-9dc0-2a6b6a2f0a11" Version="V5">
+                          <uix:NClick.InUiElement>
+                            <InArgument x:TypeArguments="ui:UiElement">
+                              <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">modalBtn</CSharpValue>
+                            </InArgument>
+                          </uix:NClick.InUiElement>
+                        </uix:NClick>
+                        <Delay Duration="00:00:00.5000000" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_100" />
+                        <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_103">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">
+                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_105">recoveryCount</CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">
+                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_104">recoveryCount + 1</CSharpValue>
+                            </InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_104">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Break sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Break_100" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_105">recoveryCount &lt; 15</CSharpValue>
+              </ui:InterruptibleWhile.Condition>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1158" Arguments="-secure -javaws -jre &quot;C:\Program Files\Java\jre1.8.0_503&quot; -vma LWNsYXNzcGF0aABDOlxQcm9ncmFtIEZpbGVzXEphdmFcanJlMS44LjBfNTAzXGxpYlxkZXBsb3kuamFyAC1EamF2YS5zZWN1cml0eS5wb2xpY3k9ZmlsZTpDOlxQcm9ncmFtIEZpbGVzXEphdmFcanJlMS44LjBfNTAzXGxpYlxzZWN1cml0eVxqYXZhd3MucG9saWN5AC1EdHJ1c3RQcm94eT10cnVlAC1YdmVyaWZ5OnJlbW90ZQAtRGpubHB4LmhvbWU9QzpcUHJvZ3JhbSBGaWxlc1xKYXZhXGpyZTEuOC4wXzUwM1xiaW4ALURqYXZhLnNlY3VyaXR5Lm1hbmFnZXIALURqbmxweC5vcmlnRmlsZW5hbWVBcmc9QzpcVXNlcnNcQWRtaW5pc3RyYXRvclxEb3dubG9hZHNcQVc0MzNfU08yMjUxXzJGQS5qbmxwAC1Eam5scHgucmVtb3ZlPWZhbHNlAC1Ec3VuLmF3dC53YXJtdXA9dHJ1ZQAtWGJvb3RjbGFzc3BhdGgvYTpDOlxQcm9ncmFtIEZpbGVzXEphdmFcanJlMS44LjBfNTAzXGxpYlxqYXZhd3MuamFyO0M6XFByb2dyYW0gRmlsZXNcSmF2YVxqcmUxLjguMF81MDNcbGliXGRlcGxveS5qYXI7QzpcUHJvZ3JhbSBGaWxlc1xKYXZhXGpyZTEuOC4wXzUwM1xsaWJccGx1Z2luLmphcgAtRGphdmEubmV0LnByZWZlcklQdjRTdGFjaz10cnVlAC1YbXMyMDAwbQAtWG14NDAwMG0ALURqbmxweC5oZWFwc2l6ZT0yMDAwbSw0MDAwbQAtRGpubHB4LnNwbGFzaHBvcnQ9NjIwMDkALURqbmxweC5qdm09QzpcUHJvZ3JhbSBGaWxlc1xKYXZhXGpyZTEuOC4wXzUwM1xiaW5camF2YXcuZXhlAC1Eam5scHgudm1hcmdzPUxVUnFZWFpoTG01bGRDNXdjbVZtWlhKSlVIWTBVM1JoWTJzOWRISjFaUUE9 -ma QzpcVXNlcnNcQWRtaW5pc3RyYXRvclxEb3dubG9hZHNcQVc0MzNfU08yMjUxXzJGQS5qbmxw" ContentHash="8MZHyJRQ0ECK-E1hcx2lLA" FilePath="C:\Program Files\Java\jre1.8.0_503\bin\jp2launcher.exe" IconBase64="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" InformativeScreenshot="7d35997c97fc6b843d8f851b212563e8.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/ZPJNQ8Vc-UaAYhjNZoIlhg" Selector="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" Version="V3">
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
