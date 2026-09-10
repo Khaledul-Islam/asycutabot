@@ -194,7 +194,9 @@
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:Int32">
-                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">System.IO.Directory.GetFiles(in_excelFileLocation).Where(f =&gt; System.IO.Path.GetFileName(f) != "memory.json").Count()</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38" xml:space="preserve">System.IO.Directory.GetFiles(in_excelFileLocation)
+    .Count(f =&gt; !System.IO.Path.GetFileName(f)
+        .Contains("memory", StringComparison.OrdinalIgnoreCase))</CSharpValue>
                       </InArgument>
                     </Assign.Value>
                     <sap:WorkflowViewStateService.ViewState>
