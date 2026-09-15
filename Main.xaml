@@ -124,20 +124,19 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="760.4000000000001,923.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="760.4000000000001,980" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="484.8,900" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="484.8,956.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="out_LcTableData" />
         <Variable x:TypeArguments="x:String" Name="errMsg" />
         <Variable x:TypeArguments="sd:DataTable" Name="LCListData" />
         <Variable x:TypeArguments="x:String" Name="outputFolder" />
         <Variable x:TypeArguments="x:String" Name="excelFileLocation" />
-        <Variable x:TypeArguments="x:String" Name="orgExcelFileName" />
         <Variable x:TypeArguments="x:String" Name="memoryLocation" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
@@ -175,9 +174,6 @@
           <InArgument x:TypeArguments="x:String" x:Key="in_excelFileLocation">
             <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">excelFileLocation</CSharpValue>
           </InArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="out_ExcelFileName">
-            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">orgExcelFileName</CSharpReference>
-          </OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -186,20 +182,20 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
-      <If DisplayName="If Error Check" sap:VirtualizedContainerService.HintSize="451.2,464.8" sap2010:WorkflowViewState.IdRef="If_1">
+      <If DisplayName="If Error Check" sap:VirtualizedContainerService.HintSize="451.2,521.6" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Condition>
           <InArgument x:TypeArguments="x:Boolean">
             <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">string.IsNullOrWhiteSpace(errMsg)</CSharpValue>
           </InArgument>
         </If.Condition>
         <If.Then>
-          <Sequence DisplayName="Then  Error Not Found" sap:VirtualizedContainerService.HintSize="449.6,227.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Then  Error Not Found" sap:VirtualizedContainerService.HintSize="449.6,284" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="OpenProgram - Invoke Workflow File (RunProgram\OpenProgram.xaml)" sap:VirtualizedContainerService.HintSize="416,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="RunProgram\OpenProgram.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="OpenProgram - Invoke Workflow File (RunProgram\OpenProgram.xaml)" sap:VirtualizedContainerService.HintSize="416,224" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="RunProgram\OpenProgram.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="sd:DataTable" x:Key="in_LCListData">
                   <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">LCListData</CSharpValue>
@@ -210,8 +206,8 @@
                 <InArgument x:TypeArguments="x:String" x:Key="in_excelFileLocation">
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">excelFileLocation</CSharpValue>
                 </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_ExcelFileName">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">orgExcelFileName</CSharpValue>
+                <InArgument x:TypeArguments="x:String" x:Key="in_memoryLocation">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">memoryLocation</CSharpValue>
                 </InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>

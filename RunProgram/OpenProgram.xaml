@@ -1,6 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="OpenProgram" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:am="clr-namespace:asycudabot.Models;assembly=asycudabot.Core" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_ExcelFileName" Type="InArgument(x:String)" />
+    <x:Property Name="in_memoryLocation" Type="InArgument(x:String)" />
     <x:Property Name="in_excelFileLocation" Type="InArgument(x:String)" />
     <x:Property Name="in_outputFolder" Type="InArgument(x:String)" />
     <x:Property Name="in_LCListData" Type="InArgument(sd:DataTable)" />
@@ -158,12 +158,11 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="OpenProgram" sap:VirtualizedContainerService.HintSize="760.4000000000001,3103.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OpenProgram" sap:VirtualizedContainerService.HintSize="760.4000000000001,17380" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Int32)" Name="lcMemory" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Int32)" Name="downloadedFileLcList" />
       <Variable x:TypeArguments="sd:DataTable" Name="remainingLcData" />
-      <Variable x:TypeArguments="x:String" Name="memoryFilePath" />
       <Variable x:TypeArguments="s:String[]" Name="rawOutputFoldersFileNames" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -171,10 +170,10 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence - Memory Read" sap:VirtualizedContainerService.HintSize="520,2975.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
+    <Sequence DisplayName="Sequence - Memory Read" sap:VirtualizedContainerService.HintSize="660.8,606.4" sap2010:WorkflowViewState.IdRef="Sequence_28">
       <Sequence.Variables>
-        <Variable x:TypeArguments="x:Boolean" Name="isMemoryFileExist" />
-        <Variable x:TypeArguments="x:Object" Name="memoryFileExcelFileName" />
+        <Variable x:TypeArguments="x:String" Name="jsonContent" />
+        <Variable x:TypeArguments="x:Object" Name="parsedData" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -182,211 +181,44 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="Assign_14">
+      <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_15">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">
-            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_50">memoryFilePath</CSharpReference>
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_58">jsonContent</CSharpReference>
           </OutArgument>
         </Assign.To>
         <Assign.Value>
           <InArgument x:TypeArguments="x:String">
-            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">System.IO.Path.Combine(in_excelFileLocation, "memory.json")</CSharpValue>
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_113">System.IO.File.ReadAllText(in_memoryLocation)</CSharpValue>
           </InArgument>
         </Assign.Value>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:FileExistsX DisplayName="File Exists" sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="FileExistsX_2">
-        <ui:FileExistsX.Exists>
-          <OutArgument x:TypeArguments="x:Boolean">
-            <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">isMemoryFileExist</CSharpReference>
+      <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_16">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Object">
+            <CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_59">parsedData</CSharpReference>
           </OutArgument>
-        </ui:FileExistsX.Exists>
-        <ui:FileExistsX.Path>
-          <InArgument x:TypeArguments="x:String">
-            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">memoryFilePath</CSharpValue>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="njl:JObject">
+            <CSharpValue x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">Newtonsoft.Json.Linq.JObject.Parse(jsonContent)</CSharpValue>
           </InArgument>
-        </ui:FileExistsX.Path>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:FileExistsX>
-      <If sap:VirtualizedContainerService.HintSize="486.4,2534.4" sap2010:WorkflowViewState.IdRef="If_3">
-        <If.Condition>
-          <InArgument x:TypeArguments="x:Boolean">
-            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">isMemoryFileExist</CSharpValue>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_18">
+        <Assign.To>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)">
+            <CSharpReference x:TypeArguments="scg:Dictionary(x:String, x:Int32)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">lcMemory</CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)">
+            <CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:Int32)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">((Newtonsoft.Json.Linq.JObject)parsedData != null &amp;&amp; ((Newtonsoft.Json.Linq.JObject)parsedData)["LcCounts"] != null ? ((Newtonsoft.Json.Linq.JObject)parsedData)["LcCounts"].ToObject&lt;System.Collections.Generic.Dictionary&lt;string, int&gt;&gt;() : new System.Collections.Generic.Dictionary&lt;string, int&gt;())</CSharpValue>
           </InArgument>
-        </If.Condition>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484.8,1428.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="jsonContent" />
-              <Variable x:TypeArguments="x:Object" Name="parsedData" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_15">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_31">jsonContent</CSharpReference>
-                </OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">System.IO.File.ReadAllText(memoryFilePath)</CSharpValue>
-                </InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_16">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Object">
-                  <CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_32">parsedData</CSharpReference>
-                </OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="njl:JObject">
-                  <CSharpValue x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">Newtonsoft.Json.Linq.JObject.Parse(jsonContent)</CSharpValue>
-                </InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_17">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Object">
-                  <CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">memoryFileExcelFileName</CSharpReference>
-                </OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Object">
-                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">((Newtonsoft.Json.Linq.JObject)parsedData)["ExcelFileName"] != null ? ((Newtonsoft.Json.Linq.JObject)parsedData)["ExcelFileName"].ToString() : ""</CSharpValue>
-                </InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_18">
-              <Assign.To>
-                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)">
-                  <CSharpReference x:TypeArguments="scg:Dictionary(x:String, x:Int32)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">lcMemory</CSharpReference>
-                </OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)">
-                  <CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:Int32)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">((Newtonsoft.Json.Linq.JObject)parsedData != null &amp;&amp; ((Newtonsoft.Json.Linq.JObject)parsedData)["LcCounts"] != null ? ((Newtonsoft.Json.Linq.JObject)parsedData)["LcCounts"].ToObject&lt;System.Collections.Generic.Dictionary&lt;string, int&gt;&gt;() : new System.Collections.Generic.Dictionary&lt;string, int&gt;())</CSharpValue>
-                </InArgument>
-              </Assign.Value>
-            </Assign>
-            <If sap:VirtualizedContainerService.HintSize="451.2,671.2" sap2010:WorkflowViewState.IdRef="If_4">
-              <If.Condition>
-                <InArgument x:TypeArguments="x:Boolean">
-                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">memoryFileExcelFileName != null ? memoryFileExcelFileName.ToString() != in_ExcelFileName : false</CSharpValue>
-                </InArgument>
-              </If.Condition>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,452" sap2010:WorkflowViewState.IdRef="Sequence_26">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="System.IO.File.WriteAllText(in_memoryFilePath, Newtonsoft.Json.JsonConvert.SerializeObject(new Dictionary&lt;string, object&gt; { { &quot;ExcelFileName&quot;, in_orgExcelFileName }, { &quot;LcCounts&quot;, new Dictionary&lt;string, int&gt;() } }));" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,392" sap2010:WorkflowViewState.IdRef="InvokeCode_3" Language="CSharp">
-                    <ui:InvokeCode.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_memoryFilePath">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">memoryFilePath</CSharpValue>
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_orgExcelFileName">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">in_ExcelFileName</CSharpValue>
-                      </InArgument>
-                    </ui:InvokeCode.Arguments>
-                  </ui:InvokeCode>
-                </Sequence>
-              </If.Then>
-              <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Sequence>
-              </If.Else>
-            </If>
-          </Sequence>
-        </If.Then>
-        <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484.8,976" sap2010:WorkflowViewState.IdRef="Sequence_25">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_19">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Object">
-                  <CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">memoryFileExcelFileName</CSharpReference>
-                </OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Object">
-                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">"'"</CSharpValue>
-                </InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_20">
-              <Assign.To>
-                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)">
-                  <CSharpReference x:TypeArguments="scg:Dictionary(x:String, x:Int32)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">lcMemory</CSharpReference>
-                </OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)">
-                  <CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:Int32)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">new Dictionary&lt;string, int&gt;()</CSharpValue>
-                </InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:CreateFile Output="{x:Null}" PathResource="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="451.2,175.2" sap2010:WorkflowViewState.IdRef="CreateFile_2" Name="memory.json">
-              <ui:CreateFile.Path>
-                <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">in_excelFileLocation</CSharpValue>
-                </InArgument>
-              </ui:CreateFile.Path>
-            </ui:CreateFile>
-            <ui:InvokeCode ContinueOnError="{x:Null}" Code="System.IO.File.WriteAllText(in_memoryFilePath, Newtonsoft.Json.JsonConvert.SerializeObject(new Dictionary&lt;string, object&gt; { { &quot;ExcelFileName&quot;, in_orgExcelFileName }, { &quot;LcCounts&quot;, new Dictionary&lt;string, int&gt;() } }));" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="451.2,392" sap2010:WorkflowViewState.IdRef="InvokeCode_2" Language="CSharp">
-              <ui:InvokeCode.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_memoryFilePath">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">memoryFilePath</CSharpValue>
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_orgExcelFileName">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">in_ExcelFileName</CSharpValue>
-                </InArgument>
-              </ui:InvokeCode.Arguments>
-            </ui:InvokeCode>
-          </Sequence>
-        </If.Else>
-      </If>
+        </Assign.Value>
+      </Assign>
     </Sequence>
-    <Sequence DisplayName="Sequence - Read All Files Name" sap:VirtualizedContainerService.HintSize="520,56.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+    <Sequence DisplayName="Sequence - Read All Files Name" sap:VirtualizedContainerService.HintSize="660.8,56.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:List(x:String)" Name="memoryCompareDoneLcList" />
         <Variable x:TypeArguments="scg:List(sd:DataRow)" Name="remainingRows" />
@@ -468,11 +300,11 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence DisplayName="Sequence -  Open AsyCuda" sap:VirtualizedContainerService.HintSize="520,48" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence -  Open AsyCuda" sap:VirtualizedContainerService.HintSize="660.8,16693.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table LC List" sap:VirtualizedContainerService.HintSize="627.2,16223.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
@@ -884,16 +716,13 @@
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:InvokeCode ContinueOnError="{x:Null}" Code="lcMemory[lcno] = lcMemory.ContainsKey(lcno)&#xA;    ? lcMemory[lcno] + 1&#xA;    : 1;&#xA;&#xA;System.IO.File.WriteAllText(&#xA;    in_memoryFilePath,&#xA;    Newtonsoft.Json.JsonConvert.SerializeObject(&#xA;        new Dictionary&lt;string, object&gt;&#xA;        {&#xA;            { &quot;ExcelFileName&quot;, excelFileName },&#xA;            { &quot;LcCounts&quot;, lcMemory }&#xA;        },&#xA;        Newtonsoft.Json.Formatting.Indented&#xA;    )&#xA;);" DisplayName="Invoke Code -- flush into  memory" sap:VirtualizedContainerService.HintSize="416,392" sap2010:WorkflowViewState.IdRef="InvokeCode_6" Language="CSharp">
+                                                <ui:InvokeCode ContinueOnError="{x:Null}" Code="lcMemory[lcno] = lcMemory.ContainsKey(lcno)&#xA;    ? lcMemory[lcno] + 1&#xA;    : 1;&#xA;&#xA;System.IO.File.WriteAllText(&#xA;    in_memoryFilePath,&#xA;    Newtonsoft.Json.JsonConvert.SerializeObject(&#xA;        new Dictionary&lt;string, object&gt;&#xA;        {&#xA;            { &quot;LcCounts&quot;, lcMemory }&#xA;        },&#xA;        Newtonsoft.Json.Formatting.Indented&#xA;    )&#xA;);" DisplayName="Invoke Code -- flush into  memory" sap:VirtualizedContainerService.HintSize="416,392" sap2010:WorkflowViewState.IdRef="InvokeCode_6" Language="CSharp">
                                                   <ui:InvokeCode.Arguments>
                                                     <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)" x:Key="lcMemory">
                                                       <CSharpReference x:TypeArguments="scg:Dictionary(x:String, x:Int32)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_53">lcMemory</CSharpReference>
                                                     </InOutArgument>
                                                     <InArgument x:TypeArguments="x:String" x:Key="in_memoryFilePath">
-                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_82">memoryFilePath</CSharpValue>
-                                                    </InArgument>
-                                                    <InArgument x:TypeArguments="x:String" x:Key="excelFileName">
-                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_83">in_ExcelFileName</CSharpValue>
+                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_114">in_memoryLocation</CSharpValue>
                                                     </InArgument>
                                                     <InArgument x:TypeArguments="x:String" x:Key="lcno">
                                                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_88">lcno</CSharpValue>
