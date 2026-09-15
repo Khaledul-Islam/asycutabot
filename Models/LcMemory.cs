@@ -12,7 +12,6 @@ namespace asycutabot.Models
     public class LcMemoryEntry
     {
         public string LCId { get; set; }
-        public decimal LCValue { get; set; }
         public List<WriteOffMemoryEntry> WriteOffs { get; set; } = new List<WriteOffMemoryEntry>();
     }
 }
