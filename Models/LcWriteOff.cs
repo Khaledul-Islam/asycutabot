@@ -1,5 +1,5 @@
 
-namespace asycutabot.Models
+namespace asycudabot.Models
 {
     public class LcWriteOff
     {

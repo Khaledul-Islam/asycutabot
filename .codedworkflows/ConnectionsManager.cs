@@ -1,7 +1,7 @@
 using UiPath.CodedWorkflows;
 using System;
 
-namespace asycutabot
+namespace asycudabot
 {
     public class ConnectionsManager
     {

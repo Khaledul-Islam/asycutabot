@@ -1,5 +1,9 @@
 {
-  "Tags": [],
+  "Tags": [
+    {
+      "Key": "version1"
+    }
+  ],
   "SeparateRuntimeDependencies": true,
   "IncludeSources": true,
   "ConnectorKeys": []

@@ -1,5 +1,5 @@
 {
-  "name": "asycutabot",
+  "name": "asycudabot",
   "projectId": "0179271e-ecc2-4209-a9fa-2a9b5d1d4012",
   "description": "",
   "main": "Main.xaml",
@@ -14,7 +14,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.1",
   "studioVersion": "26.0.199.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.2",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
