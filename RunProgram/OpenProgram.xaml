@@ -1206,9 +1206,7 @@
                                                     <InArgument x:TypeArguments="x:String" x:Key="in_memoryFilePath">
                                                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_162">in_memoryLocation</CSharpValue>
                                                     </InArgument>
-                                                    <InArgument x:TypeArguments="x:Boolean" x:Key="isReceiptR">
-                                                      <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_171">isReceiptR</CSharpValue>
-                                                    </InArgument>
+                                                    <InArgument x:TypeArguments="x:Boolean" x:Key="isReceiptR">True</InArgument>
                                                   </ui:InvokeCode.Arguments>
                                                 </ui:InvokeCode>
                                                 <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Close  Detailed Declaration View" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="180" Version="V5">
