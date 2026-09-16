@@ -40,7 +40,6 @@
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>asycudabot.Core</AssemblyReference>
-      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
       <AssemblyReference>NPOI.Core</AssemblyReference>
@@ -102,7 +101,7 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Close Asycuda Modal" sap:VirtualizedContainerService.HintSize="556.8,1300" sap2010:WorkflowViewState.IdRef="Sequence_100">
+  <Sequence DisplayName="Close Asycuda Modal" sap:VirtualizedContainerService.HintSize="757.2,2204.8" sap2010:WorkflowViewState.IdRef="Sequence_100">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="recoveryCount" />
     </Sequence.Variables>
@@ -118,13 +117,13 @@
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ASYCUDAWorld" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,1080" sap2010:WorkflowViewState.IdRef="NApplicationCard_100" ScopeGuid="b6b7a0b0-2f56-4b64-9dc0-2a6b6a2f0a11" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ASYCUDAWorld" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,2007.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_100" ScopeGuid="b6b7a0b0-2f56-4b64-9dc0-2a6b6a2f0a11" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,900" sap2010:WorkflowViewState.IdRef="Sequence_101">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1760.8" sap2010:WorkflowViewState.IdRef="Sequence_101">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -140,9 +139,9 @@
                 <InArgument x:TypeArguments="x:Int32">0</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While Close/Cancel Buttons Exist" sap:VirtualizedContainerService.HintSize="486.4,600" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_100">
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While Close/Cancel Buttons Exist" sap:VirtualizedContainerService.HintSize="486.4,1526.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_100">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,500" sap2010:WorkflowViewState.IdRef="Sequence_102">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,1404.8" sap2010:WorkflowViewState.IdRef="Sequence_102">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="closeButtons" />
                     <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="cancelButtons" />
@@ -153,7 +152,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:FindChildren ContinueOnError="True" DisplayName="Find Children 'Close'" Filter="&lt;java name='Close' role='push button' /&gt;" sap:VirtualizedContainerService.HintSize="451.2,139.2" sap2010:WorkflowViewState.IdRef="FindChildren_100" Scope="FIND_DESCENDANTS">
+                  <ui:FindChildren ContinueOnError="True" DisplayName="Find Children 'Close'" Filter="&lt;java name='Close' role='push button' /&gt;" sap:VirtualizedContainerService.HintSize="451.2,118.4" sap2010:WorkflowViewState.IdRef="FindChildren_100" Scope="FIND_DESCENDANTS">
                     <ui:FindChildren.Children>
                       <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
                         <CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_101">closeButtons</CSharpReference>
@@ -170,7 +169,7 @@
                       </ui:Target>
                     </ui:FindChildren.Target>
                   </ui:FindChildren>
-                  <ui:FindChildren ContinueOnError="True" DisplayName="Find Children 'Cancel'" Filter="&lt;java name='Cancel' role='push button' /&gt;" sap:VirtualizedContainerService.HintSize="451.2,139.2" sap2010:WorkflowViewState.IdRef="FindChildren_101" Scope="FIND_DESCENDANTS">
+                  <ui:FindChildren ContinueOnError="True" DisplayName="Find Children 'Cancel'" Filter="&lt;java name='Cancel' role='push button' /&gt;" sap:VirtualizedContainerService.HintSize="451.2,118.4" sap2010:WorkflowViewState.IdRef="FindChildren_101" Scope="FIND_DESCENDANTS">
                     <ui:FindChildren.Children>
                       <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
                         <CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_102">cancelButtons</CSharpReference>
@@ -187,7 +186,7 @@
                       </ui:Target>
                     </ui:FindChildren.Target>
                   </ui:FindChildren>
-                  <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_101">
+                  <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_101">
                     <Assign.To>
                       <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
                         <CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_103">modalButtons</CSharpReference>

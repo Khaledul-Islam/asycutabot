@@ -29,6 +29,8 @@
       <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -105,13 +107,13 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ReadExcelFile" sap:VirtualizedContainerService.HintSize="757.2,4867.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ReadExcelFile" sap:VirtualizedContainerService.HintSize="757.2,5041.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence - Excel Read" sap:VirtualizedContainerService.HintSize="657.6,4844" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence - Excel Read" sap:VirtualizedContainerService.HintSize="657.6,5018.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="isExcelFileLocation" />
       </Sequence.Variables>
@@ -120,7 +122,20 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="624,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info">
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">"==Started Reading Excel File=="</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
       <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="624,4760.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
           <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="622.4,4256.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
@@ -166,6 +181,7 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Assign DisplayName="Assign fileCount" sap:VirtualizedContainerService.HintSize="553.6,174.4" sap2010:WorkflowViewState.IdRef="Assign_3">
@@ -216,7 +232,7 @@
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn">
                           <ui:LogMessage.Message>
                             <InArgument x:TypeArguments="x:Object">
-                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">"Currently bot accept 1 file at a time."</CSharpValue>
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">out_errMsg</CSharpValue>
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
@@ -255,7 +271,7 @@
                                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
                                   <ui:LogMessage.Message>
                                     <InArgument x:TypeArguments="x:Object">
-                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">$"File Name:{CurrentFile.Name} in Process"</CSharpValue>
+                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">$"==File Found.. Name:{CurrentFile.Name}.. in Process=="</CSharpValue>
                                     </InArgument>
                                   </ui:LogMessage.Message>
                                   <sap:WorkflowViewStateService.ViewState>
@@ -301,13 +317,6 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info">
-                                  <ui:LogMessage.Message>
-                                    <InArgument x:TypeArguments="x:Object">
-                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">"Column Name Should be LC ID and B cell"</CSharpValue>
-                                    </InArgument>
-                                  </ui:LogMessage.Message>
-                                </ui:LogMessage>
                                 <ui:ReadRange AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="451.2,226.4" sap2010:WorkflowViewState.IdRef="ReadRange_1" PreserveFormat="True" Range="B:B">
                                   <ui:ReadRange.DataTable>
                                     <OutArgument x:TypeArguments="sd:DataTable">
@@ -331,6 +340,19 @@
                                     </InArgument>
                                   </ui:ReadRange.WorkbookPathResource>
                                 </ui:ReadRange>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info">
+                                  <ui:LogMessage.Message>
+                                    <InArgument x:TypeArguments="x:Object">
+                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">$"==Removing Duplicate Entry=="</CSharpValue>
+                                    </InArgument>
+                                  </ui:LogMessage.Message>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:LogMessage>
                                 <ui:RemoveDuplicateRows DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="451.2,112.8" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1">
                                   <ui:RemoveDuplicateRows.DataTable>
                                     <InArgument x:TypeArguments="sd:DataTable">
@@ -358,7 +380,7 @@
                                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
                                   <ui:LogMessage.Message>
                                     <InArgument x:TypeArguments="x:Object">
-                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">$"Read Complete File Name: {CurrentFile.Name} "</CSharpValue>
+                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">$"==Read Complete.. File Name: {CurrentFile.Name} =="</CSharpValue>
                                     </InArgument>
                                   </ui:LogMessage.Message>
                                 </ui:LogMessage>

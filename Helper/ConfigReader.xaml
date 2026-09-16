@@ -39,7 +39,6 @@
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
-      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -89,7 +88,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Read Configuration" sap:VirtualizedContainerService.HintSize="766.4000000000001,730.0566666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Read Configuration" sap:VirtualizedContainerService.HintSize="757.2,970.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="jsonContent" />
     </Sequence.Variables>
@@ -98,12 +97,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence -  Read Config" sap:VirtualizedContainerService.HintSize="449.6,598.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence -  Read Config" sap:VirtualizedContainerService.HintSize="449.6,947.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"==Started Reading Configuration=="</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
       <ui:ReadTextFile File="{x:Null}" DisplayName="Read asycude.json" sap:VirtualizedContainerService.HintSize="416,123.2" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
         <ui:ReadTextFile.Content>
           <OutArgument x:TypeArguments="x:String">
@@ -116,7 +122,7 @@
           </InArgument>
         </ui:ReadTextFile.FileName>
       </ui:ReadTextFile>
-      <ui:InvokeCode ContinueOnError="{x:Null}" Code="var jObj = Newtonsoft.Json.Linq.JObject.Parse(jsonContent);&#xA;out_OutputFolder = jObj[&quot;OutputFolder&quot;]?.ToString();&#xA;out_ExcelFileLocation = jObj[&quot;ExcelFileLocation&quot;]?.ToString();&#xA;out_MemoryLocation= jObj[&quot;MemoryLocation&quot;]?.ToString();" DisplayName="Parse JSON config" sap:VirtualizedContainerService.HintSize="416,392" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="var jObj = Newtonsoft.Json.Linq.JObject.Parse(jsonContent);&#xA;out_OutputFolder = jObj[&quot;OutputFolder&quot;]?.ToString();&#xA;out_ExcelFileLocation = jObj[&quot;ExcelFileLocation&quot;]?.ToString();&#xA;out_MemoryLocation= jObj[&quot;MemoryLocation&quot;]?.ToString();" DisplayName="Parse JSON config" sap:VirtualizedContainerService.HintSize="416,400.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
         <ui:InvokeCode.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="jsonContent">
             <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue_1">jsonContent</CSharpValue>
@@ -132,6 +138,13 @@
           </OutArgument>
         </ui:InvokeCode.Arguments>
       </ui:InvokeCode>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"==Ended Reading Configuration=="</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
     </Sequence>
   </Sequence>
 </Activity>
