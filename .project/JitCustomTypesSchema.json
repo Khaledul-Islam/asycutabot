@@ -1,0 +1,38 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "1481798741",
+        "bundleName": "uid1481798741",
+        "entitiesBundle": {
+          "Types": {
+            "UIData": {
+              "name": "UIData",
+              "properties": [
+                {
+                  "name": "ReceiptNumber",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "values": [],
+              "baseType": null
+            }
+          },
+          "Metadata": {},
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.UIAutomationNext.Activities.Design.SWEntities.uid1481798741",
+        "hash": "MTQ4MTc5ODc0MQ",
+        "assemblyName": "uid1481798741.sLlCj14NejF19SZrd4gCEqQ2"
+      }
+    }
+  ]
+}
