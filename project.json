@@ -4,6 +4,7 @@
   "description": "",
   "main": "Main.xaml",
   "dependencies": {
+    "PdfPig": "[0.1.16]",
     "UiPath.Excel.Activities": "[3.6.0-preview]",
     "UiPath.MicrosoftOffice365.Activities": "[3.11.10]",
     "UiPath.PDF.Activities": "[4.5.0-preview]",
@@ -56,6 +57,12 @@
     {
       "filePath": "Service\\HelperService.cs",
       "uniqueId": "2a4ec276-4734-4919-876d-d2f9596f1d9a",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Service\\FindOutReceiptNumber.cs",
+      "uniqueId": "94934be9-1f2a-4a9c-90e3-c37e6cecfc77",
       "input": [],
       "output": []
     }

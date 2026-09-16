@@ -142,7 +142,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="OpenProgram" sap:VirtualizedContainerService.HintSize="757.2,16377.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OpenProgram" sap:VirtualizedContainerService.HintSize="757.2,16280" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(am:LcMemoryEntry)" Name="lcMemory" />
       <Variable x:TypeArguments="s:String[]" Name="rawOutputFoldersFileNames" />
@@ -152,7 +152,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence - Memory Read" sap:VirtualizedContainerService.HintSize="696,432" sap2010:WorkflowViewState.IdRef="Sequence_28">
+    <Sequence DisplayName="Sequence - Memory Read" sap:VirtualizedContainerService.HintSize="731.2,432" sap2010:WorkflowViewState.IdRef="Sequence_28">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="jsonContent" />
       </Sequence.Variables>
@@ -188,7 +188,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence DisplayName="Sequence - Read All Files Name" sap:VirtualizedContainerService.HintSize="696,257.6" sap2010:WorkflowViewState.IdRef="Sequence_56">
+    <Sequence DisplayName="Sequence - Read All Files Name" sap:VirtualizedContainerService.HintSize="731.2,257.6" sap2010:WorkflowViewState.IdRef="Sequence_56">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -208,20 +208,20 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence DisplayName="Sequence -  Open AsyCuda" sap:VirtualizedContainerService.HintSize="696,15664.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence -  Open AsyCuda" sap:VirtualizedContainerService.HintSize="731.2,15567.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table LC List" sap:VirtualizedContainerService.HintSize="662.4,15416" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table LC List" sap:VirtualizedContainerService.HintSize="697.6,15318.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="LCROW" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="660.8,15234.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="696,15136.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="lcno" />
               </Sequence.Variables>
@@ -230,21 +230,21 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <TryCatch DisplayName="Try Catch - LC Datatable Loop" sap:VirtualizedContainerService.HintSize="627.2,15174.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Catch - LC Datatable Loop" sap:VirtualizedContainerService.HintSize="662.4,15076.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <TryCatch.Try>
-                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="625.6,14928" sap2010:WorkflowViewState.IdRef="Sequence_Try_1">
+                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="660.8,14830.4" sap2010:WorkflowViewState.IdRef="Sequence_Try_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Assign LC NO" sap:VirtualizedContainerService.HintSize="592,174.4" sap2010:WorkflowViewState.IdRef="Assign_23">
+                    <Assign DisplayName="Assign LC NO" sap:VirtualizedContainerService.HintSize="627.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_23">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">
                           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_48">lcno</CSharpReference>
@@ -262,7 +262,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <If sap:VirtualizedContainerService.HintSize="592,336" sap2010:WorkflowViewState.IdRef="If_6">
+                    <If sap:VirtualizedContainerService.HintSize="627.2,336" sap2010:WorkflowViewState.IdRef="If_6">
                       <If.Condition>
                         <InArgument x:TypeArguments="x:Boolean">
                           <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_120">lcMemory.Any(x =&gt; x.LCId == lcno &amp;&amp; x.WriteOffs.Count &gt; 0 &amp;&amp; x.WriteOffs.All(w =&gt; w.IsDownloaded &amp;&amp; w.IsReceipt))</CSharpValue>
@@ -294,13 +294,13 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ASYCUDAWorld" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="592,14357.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V2" WindowResize="Maximize">
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ASYCUDAWorld" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="627.2,14260" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Version="V2" WindowResize="Maximize">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="590.4,14111.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="625.6,14013.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="sd:DataTable" Name="out_lstLcWriteOff" />
                             </Sequence.Variables>
@@ -488,7 +488,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Click 'Close LC Finder'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="556.8,193.6" sap2010:WorkflowViewState.IdRef="NClick_38" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="180" Version="V5">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Click 'Close LC Finder'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="592,193.6" sap2010:WorkflowViewState.IdRef="NClick_38" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="180" Version="V5">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable ContentHash="JOX4H0aYt0KcVEelZ3a-Jg" DesignTimeRectangle="585, 201, 16, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Letter of Credit finder' role='internal frame' /&gt;&lt;java hasTableAncestor='0' name='Close' role='push button' /&gt;" Guid="7a2cc57a-207d-42b5-b515-8779f8a9ab20" InformativeScreenshot="5fab992282caa4b0077f590e5d4a425e.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/3LRXOOOpKE-5uaQXWLQAJA" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                               </uix:NClick.Target>
@@ -499,7 +499,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NClick>
-                            <If DisplayName="If Write of table is not Empty" sap:VirtualizedContainerService.HintSize="556.8,698.4" sap2010:WorkflowViewState.IdRef="If_8">
+                            <If DisplayName="If Write of table is not Empty" sap:VirtualizedContainerService.HintSize="592,698.4" sap2010:WorkflowViewState.IdRef="If_8">
                               <If.Condition>
                                 <InArgument x:TypeArguments="x:Boolean">
                                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">out_lstLcWriteOff != null &amp;&amp; out_lstLcWriteOff.Rows.Count &gt; 0</CSharpValue>
@@ -547,13 +547,13 @@
                                 </Sequence>
                               </If.Else>
                             </If>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table - Write Off" sap:VirtualizedContainerService.HintSize="556.8,10423.2" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table - Write Off" sap:VirtualizedContainerService.HintSize="592,10325.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="WRITEOFFROW" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="555.2,10250.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="590.4,10152.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="OfficeCode" />
                                       <Variable x:TypeArguments="x:String" Name="RegistrationYear" />
@@ -566,7 +566,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <TryCatch DisplayName="Try Catch - Write Off Row" sap:VirtualizedContainerService.HintSize="521.6,10190.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                    <TryCatch DisplayName="Try Catch - Write Off Row" sap:VirtualizedContainerService.HintSize="556.8,10092.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -574,7 +574,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <TryCatch.Try>
-                                        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="520,9944" sap2010:WorkflowViewState.IdRef="Sequence_Try_2">
+                                        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="555.2,9846.4" sap2010:WorkflowViewState.IdRef="Sequence_Try_2">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="x:String" Name="InvoiceValue" />
                                           </Sequence.Variables>
@@ -674,7 +674,7 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </Assign>
-                                          <If DisplayName="If found write of in folder" sap:VirtualizedContainerService.HintSize="486.4,9600" sap2010:WorkflowViewState.IdRef="If_5">
+                                          <If DisplayName="If found write of in folder" sap:VirtualizedContainerService.HintSize="521.6,9502.4" sap2010:WorkflowViewState.IdRef="If_5">
                                             <If.Condition>
                                               <InArgument x:TypeArguments="x:Boolean">
                                                 <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_122">rawOutputFoldersFileNames.Any(path =&gt;path.Contains($"{lcno}_{RegistrationNumber}")) || lcMemory.Any(x =&gt; x.LCId == lcno &amp;&amp; x.WriteOffs.Any(w =&gt; w.WriteOffId == $"{RegistrationNumber}_{lcno}" &amp;&amp; w.IsDownloaded));</CSharpValue>
@@ -691,10 +691,9 @@
                                               </Sequence>
                                             </If.Then>
                                             <If.Else>
-                                              <Sequence DisplayName="Else Download Bill of Entry" sap:VirtualizedContainerService.HintSize="484.8,9362.4" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                              <Sequence DisplayName="Else Download Bill of Entry" sap:VirtualizedContainerService.HintSize="520,9264.8" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                                 <Sequence.Variables>
                                                   <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="extractedFields" />
-                                                  <Variable x:TypeArguments="x:Boolean" Name="isReceiptR" />
                                                 </Sequence.Variables>
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1063,7 +1062,7 @@
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                 </uix:NClick>
-                                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,256.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" InteractionMode="HardwareEvents" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Enter)][u(hk)]" Timeout="180" Version="V5">
+                                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,256.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" InteractionMode="HardwareEvents" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Enter)][u(hk)]" Timeout="180" Version="V5">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1071,7 +1070,7 @@
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                 </uix:NKeyboardShortcuts>
-                                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.2" DisplayName="Click 'print Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,265.6" sap2010:WorkflowViewState.IdRef="NClick_34" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="120" Version="V5">
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.2" DisplayName="Click 'print Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,265.6" sap2010:WorkflowViewState.IdRef="NClick_34" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="120" Version="V5">
                                                   <uix:NClick.Target>
                                                     <uix:TargetAnchorable ContentHash="YGXpZFwNj0ahWqJsRSdayQ" DesignTimeRectangle="376, 147, 35, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Detailed Declaration - View [*]' role='internal frame' /&gt;&lt;java cls='KToolBar' role='tool bar' /&gt;&lt;java idx='13' role='push button' /&gt;" Guid="d26a9ed7-6bf5-450f-a9a1-c79618aee827" InformativeScreenshot="5d7f38ae82f3d3c003fc8a669b7cc743.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/_xFdVM8D5Emq6rlSBRwiRg" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                                   </uix:NClick.Target>
@@ -1095,7 +1094,7 @@
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                 </uix:NClick>
-                                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.5" DelayBefore="0.1" DisplayName="Click Tick" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,56.8" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="120" Version="V5">
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.5" DelayBefore="0.1" DisplayName="Click Tick" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="120" Version="V5">
                                                   <uix:NClick.Target>
                                                     <uix:TargetAnchorable ContentHash="ycN07r3fmUuZwHdnuPYBbA" DesignTimeRectangle="467, 176, 29, 28" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java role='push button' /&gt;" Guid="b6d557e6-289a-4e4b-844a-08a59f673eae" InformativeScreenshot="1941a0b7d3ccc4017c19b60b331b23ae.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/5DKM0OMLHUy7Qo30XwkehQ" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtDialog' title='Transaction completed' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                                   </uix:NClick.Target>
@@ -1116,7 +1115,7 @@
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                 </uix:NClick>
-                                                <Delay sap:VirtualizedContainerService.HintSize="451.2,56.8" sap2010:WorkflowViewState.IdRef="Delay_1">
+                                                <Delay sap:VirtualizedContainerService.HintSize="486.4,56.8" sap2010:WorkflowViewState.IdRef="Delay_1">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1127,79 +1126,250 @@
                                                     <CSharpValue x:TypeArguments="x:TimeSpan" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99">new TimeSpan(0, 0, 2)</CSharpValue>
                                                   </InArgument>
                                                 </Delay>
-                                                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome .pdf" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,2388" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Timeout="120" Version="V2" WindowResize="Maximize">
+                                                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome .pdf" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,3069.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Timeout="120" Version="V2" WindowResize="Maximize">
                                                   <uix:NApplicationCard.Body>
                                                     <ActivityAction x:TypeArguments="x:Object">
                                                       <ActivityAction.Argument>
                                                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                       </ActivityAction.Argument>
-                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,2184.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,2875.2" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                                         <Sequence.Variables>
                                                           <Variable x:TypeArguments="sd:DataTable" Name="extractedFieldsTable" />
+                                                          <Variable x:TypeArguments="x:String" Name="tempFilePath" />
+                                                          <Variable x:TypeArguments="x:String" Name="receiptData" />
                                                         </Sequence.Variables>
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Keyboard Shortcuts - Save PDF" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_13" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][d(ctrl)]s[u(ctrl)][u(hk)]" Version="V5" />
-                                                        <uix:NKeyboardShortcuts ActivateBefore="True" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_16" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][d(alt)]d[u(alt)][u(hk)][d(hk)][k(Back)][u(hk)]" Version="V5">
-                                                          <uix:NKeyboardShortcuts.ClickBeforeMode>
-                                                            <InArgument x:TypeArguments="uix:NClickMode">
-                                                              <CSharpValue x:TypeArguments="uix:NClickMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97">UiPath.UIAutomationNext.Enums.NClickMode.Single</CSharpValue>
+                                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Keyboard Shortcuts - Save PDF" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,328" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_21" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][d(alt)]d[u(alt)][u(hk)][d(hk)][d(ctrl)]c[u(ctrl)][u(hk)][d(hk)][k(Esc)][u(hk)][d(hk)][k(Esc)][u(hk)]" Version="V5" />
+                                                        <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="Get From Clipboard" sap:VirtualizedContainerService.HintSize="451.2,56.8" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
+                                                          <ui:GetFromClipboard.Result>
+                                                            <OutArgument x:TypeArguments="x:String">
+                                                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_73">tempFilePath</CSharpReference>
+                                                            </OutArgument>
+                                                          </ui:GetFromClipboard.Result>
+                                                        </ui:GetFromClipboard>
+                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="True" DisplayName="FindOutReceiptNumber - Invoke Workflow File (Service\FindOutReceiptNumber.cs)" sap:VirtualizedContainerService.HintSize="451.2,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Service\FindOutReceiptNumber.cs">
+                                                          <ui:InvokeWorkflowFile.Arguments>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="pdfPath">
+                                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_167">tempFilePath</CSharpValue>
                                                             </InArgument>
-                                                          </uix:NKeyboardShortcuts.ClickBeforeMode>
-                                                          <sap:WorkflowViewStateService.ViewState>
-                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                            </scg:Dictionary>
-                                                          </sap:WorkflowViewStateService.ViewState>
-                                                        </uix:NKeyboardShortcuts>
-                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Type Into 'All locations Desktop'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,296.8" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Version="V5">
-                                                          <uix:NTypeInto.Text>
-                                                            <InArgument x:TypeArguments="x:String">
-                                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">in_outputFolder</CSharpValue>
+                                                            <OutArgument x:TypeArguments="x:String" x:Key="Output">
+                                                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_74">receiptData</CSharpReference>
+                                                            </OutArgument>
+                                                          </ui:InvokeWorkflowFile.Arguments>
+                                                        </ui:InvokeWorkflowFile>
+                                                        <If DisplayName="If  BE has Receipt Number" sap:VirtualizedContainerService.HintSize="451.2,2254.4" sap2010:WorkflowViewState.IdRef="If_9">
+                                                          <If.Condition>
+                                                            <InArgument x:TypeArguments="x:Boolean">
+                                                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_169">receiptData != null ? receiptData.Contains("R") : false</CSharpValue>
                                                             </InArgument>
-                                                          </uix:NTypeInto.Text>
-                                                          <sap:WorkflowViewStateService.ViewState>
-                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                            </scg:Dictionary>
-                                                          </sap:WorkflowViewStateService.ViewState>
-                                                        </uix:NTypeInto>
-                                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_17" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5" />
-                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="0.1" DelayBefore="0.1" DeselectAfter="True" DisplayName="Type Into 'PDF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,296.8" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Version="V5">
-                                                          <uix:NTypeInto.EmptyFieldMode>
-                                                            <InArgument x:TypeArguments="uix:NEmptyFieldMode">
-                                                              <CSharpValue x:TypeArguments="uix:NEmptyFieldMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">UiPath.UIAutomationNext.Enums.NEmptyFieldMode.MultiLine</CSharpValue>
-                                                            </InArgument>
-                                                          </uix:NTypeInto.EmptyFieldMode>
-                                                          <uix:NTypeInto.Target>
-                                                            <uix:TargetAnchorable BrowserURL="" ContentHash="-2zNHxQ_OkGFUAQP7ALorQ" DesignTimeRectangle="169, 397, 752, 22" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1001' /&gt;" Guid="040b8da1-2df7-431a-aa35-2660705a9486" InformativeScreenshot="80773d88b842b166fa3b4e822cbe921b.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/d8UlX1f8HUe_uTDi2tMFqg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                                                          </uix:NTypeInto.Target>
-                                                          <uix:NTypeInto.Text>
-                                                            <InArgument x:TypeArguments="x:String">
-                                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_163">$"{lcno}_{RegistrationNumber}_{InvoiceValue}"</CSharpValue>
-                                                            </InArgument>
-                                                          </uix:NTypeInto.Text>
-                                                          <sap:WorkflowViewStateService.ViewState>
-                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                            </scg:Dictionary>
-                                                          </sap:WorkflowViewStateService.ViewState>
-                                                        </uix:NTypeInto>
-                                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DelayBetweenKeys="0.1" DelayBetweenShortcuts="0.1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_10" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
-                                                          <sap:WorkflowViewStateService.ViewState>
-                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                            </scg:Dictionary>
-                                                          </sap:WorkflowViewStateService.ViewState>
-                                                        </uix:NKeyboardShortcuts>
-                                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DelayBetweenKeys="0.1" DelayBetweenShortcuts="0.1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,299.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_14" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][d(alt)]f[u(alt)][u(hk)][d(hk)][d(shift)]x[u(shift)][u(hk)]" Version="V5" />
+                                                          </If.Condition>
+                                                          <If.Then>
+                                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,1020" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Keyboard Shortcuts - Save PDF" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_13" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][d(ctrl)]s[u(ctrl)][u(hk)]" Version="V5">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NKeyboardShortcuts>
+                                                              <uix:NKeyboardShortcuts ActivateBefore="True" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_16" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][d(alt)]d[u(alt)][u(hk)][d(hk)][k(Back)][u(hk)]" Version="V5">
+                                                                <uix:NKeyboardShortcuts.ClickBeforeMode>
+                                                                  <InArgument x:TypeArguments="uix:NClickMode">
+                                                                    <CSharpValue x:TypeArguments="uix:NClickMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97">UiPath.UIAutomationNext.Enums.NClickMode.Single</CSharpValue>
+                                                                  </InArgument>
+                                                                </uix:NKeyboardShortcuts.ClickBeforeMode>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NKeyboardShortcuts>
+                                                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Type Into 'All locations Desktop'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Version="V5">
+                                                                <uix:NTypeInto.Text>
+                                                                  <InArgument x:TypeArguments="x:String">
+                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">in_outputFolder</CSharpValue>
+                                                                  </InArgument>
+                                                                </uix:NTypeInto.Text>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NTypeInto>
+                                                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_17" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NKeyboardShortcuts>
+                                                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="0.1" DelayBefore="0.1" DeselectAfter="True" DisplayName="Type Into 'PDF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Version="V5">
+                                                                <uix:NTypeInto.EmptyFieldMode>
+                                                                  <InArgument x:TypeArguments="uix:NEmptyFieldMode">
+                                                                    <CSharpValue x:TypeArguments="uix:NEmptyFieldMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">UiPath.UIAutomationNext.Enums.NEmptyFieldMode.MultiLine</CSharpValue>
+                                                                  </InArgument>
+                                                                </uix:NTypeInto.EmptyFieldMode>
+                                                                <uix:NTypeInto.Target>
+                                                                  <uix:TargetAnchorable BrowserURL="" ContentHash="-2zNHxQ_OkGFUAQP7ALorQ" DesignTimeRectangle="169, 397, 752, 22" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1001' /&gt;" Guid="040b8da1-2df7-431a-aa35-2660705a9486" InformativeScreenshot="80773d88b842b166fa3b4e822cbe921b.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/d8UlX1f8HUe_uTDi2tMFqg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                                                </uix:NTypeInto.Target>
+                                                                <uix:NTypeInto.Text>
+                                                                  <InArgument x:TypeArguments="x:String">
+                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_163">$"{lcno}_{RegistrationNumber}_{InvoiceValue}"</CSharpValue>
+                                                                  </InArgument>
+                                                                </uix:NTypeInto.Text>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NTypeInto>
+                                                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DelayBetweenKeys="0.1" DelayBetweenShortcuts="0.1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_10" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NKeyboardShortcuts>
+                                                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DelayBetweenKeys="0.1" DelayBetweenShortcuts="0.1" DisplayName="Keyboard Shortcuts Exit Chrome" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_14" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][d(alt)]f[u(alt)][u(hk)][d(hk)][d(shift)]x[u(shift)][u(hk)]" Version="V5">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NKeyboardShortcuts>
+                                                              <ui:InvokeCode ContinueOnError="{x:Null}" Code="var lc = lcMemory.FirstOrDefault(x =&gt; x.LCId == lcno);&#xA;if (lc != null)&#xA;{&#xA;    var writeOffId = $&quot;{RegistrationNumber}_{lcno}&quot;;&#xA;    var writeOff = lc.WriteOffs.FirstOrDefault(w =&gt; w.WriteOffId == writeOffId);&#xA;    if (writeOff != null)&#xA;    {&#xA;        writeOff.IsDownloaded = true;&#xA;        writeOff.IsReceipt = true;&#xA;&#xA;        System.IO.File.WriteAllText(&#xA;            in_memoryFilePath,&#xA;            Newtonsoft.Json.JsonConvert.SerializeObject(lcMemory, Newtonsoft.Json.Formatting.Indented)&#xA;        );&#xA;    }&#xA;}" DisplayName="Invoke Code --update into  memory" sap:VirtualizedContainerService.HintSize="416,400.8" sap2010:WorkflowViewState.IdRef="InvokeCode_9" Language="CSharp">
+                                                                <ui:InvokeCode.Arguments>
+                                                                  <InOutArgument x:TypeArguments="scg:List(am:LcMemoryEntry)" x:Key="lcMemory">
+                                                                    <CSharpReference x:TypeArguments="scg:List(am:LcMemoryEntry)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_72">lcMemory</CSharpReference>
+                                                                  </InOutArgument>
+                                                                  <InArgument x:TypeArguments="x:String" x:Key="lcno">
+                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_160">lcno</CSharpValue>
+                                                                  </InArgument>
+                                                                  <InArgument x:TypeArguments="x:String" x:Key="RegistrationNumber">
+                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_161">RegistrationNumber</CSharpValue>
+                                                                  </InArgument>
+                                                                  <InArgument x:TypeArguments="x:String" x:Key="in_memoryFilePath">
+                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_162">in_memoryLocation</CSharpValue>
+                                                                  </InArgument>
+                                                                </ui:InvokeCode.Arguments>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </ui:InvokeCode>
+                                                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Close  Detailed Declaration View" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="180" Version="V5">
+                                                                <uix:NClick.Target>
+                                                                  <uix:TargetAnchorable ContentHash="NL_M9CxJz0e5Htpj8fvGpw" DesignTimeRectangle="1514, 237, 16, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Detailed Declaration - View [*]' role='internal frame' /&gt;&lt;java hasTableAncestor='0' name='Close' role='push button' /&gt;" Guid="78fd4fca-15b3-4259-8f26-24bcce34f9ce" InformativeScreenshot="f923ac287de7435e0ef56715a952976d.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/S7qb1_UEakKPKH49Lc7NQg" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                                                </uix:NClick.Target>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NClick>
+                                                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Close  Detailed Declaration Finder" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="180" Version="V5">
+                                                                <uix:NClick.Target>
+                                                                  <uix:TargetAnchorable ContentHash="BoBWq3D6nUmy-RrfeGqabQ" DesignTimeRectangle="834, 201, 16, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Detailed Declaration finder' role='internal frame' /&gt;&lt;java hasTableAncestor='0' name='Close' role='push button' /&gt;" Guid="0a14c853-0a21-4486-a70b-56530507eea3" InformativeScreenshot="054cbb5c76ffc0eb685b44c44479bd96.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/LJkITjVlUUmvtR29SPkfAQ" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                                                </uix:NClick.Target>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NClick>
+                                                              <ui:Continue sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Continue_14" />
+                                                            </Sequence>
+                                                          </If.Then>
+                                                          <If.Else>
+                                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,1104.8" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+                                                                <ui:LogMessage.Message>
+                                                                  <InArgument x:TypeArguments="x:Object">
+                                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_170">"===Receipt Number is Empty. Exiting===="</CSharpValue>
+                                                                  </InArgument>
+                                                                </ui:LogMessage.Message>
+                                                              </ui:LogMessage>
+                                                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.1" DelayBefore="0.1" DelayBetweenKeys="0.1" DelayBetweenShortcuts="0.1" DisplayName="Keyboard Shortcuts Exit Chrome" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_22" InteractionMode="HardwareEvents" ScopeIdentifier="b8df9a75-5e6c-4a2a-83a0-a93134a5e3b9" Shortcuts="[d(hk)][d(alt)]f[u(alt)][u(hk)][d(hk)][d(shift)]x[u(shift)][u(hk)]" Version="V5">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NKeyboardShortcuts>
+                                                              <ui:InvokeCode ContinueOnError="{x:Null}" Code="var lc = lcMemory.FirstOrDefault(x =&gt; x.LCId == lcno);&#xA;if (lc != null)&#xA;{&#xA;    var writeOffId = $&quot;{RegistrationNumber}_{lcno}&quot;;&#xA;    var writeOff = lc.WriteOffs.FirstOrDefault(w =&gt; w.WriteOffId == writeOffId);&#xA;    if (writeOff != null)&#xA;    {&#xA;        writeOff.IsDownloaded = false;&#xA;        writeOff.IsReceipt = false;&#xA;&#xA;        System.IO.File.WriteAllText(&#xA;            in_memoryFilePath,&#xA;            Newtonsoft.Json.JsonConvert.SerializeObject(lcMemory, Newtonsoft.Json.Formatting.Indented)&#xA;        );&#xA;    }&#xA;}" DisplayName="Invoke Code --update into  memory" sap:VirtualizedContainerService.HintSize="416,400.8" sap2010:WorkflowViewState.IdRef="InvokeCode_10" Language="CSharp">
+                                                                <ui:InvokeCode.Arguments>
+                                                                  <InOutArgument x:TypeArguments="scg:List(am:LcMemoryEntry)" x:Key="lcMemory">
+                                                                    <CSharpReference x:TypeArguments="scg:List(am:LcMemoryEntry)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_75">lcMemory</CSharpReference>
+                                                                  </InOutArgument>
+                                                                  <InArgument x:TypeArguments="x:String" x:Key="lcno">
+                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_171">lcno</CSharpValue>
+                                                                  </InArgument>
+                                                                  <InArgument x:TypeArguments="x:String" x:Key="RegistrationNumber">
+                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_172">RegistrationNumber</CSharpValue>
+                                                                  </InArgument>
+                                                                  <InArgument x:TypeArguments="x:String" x:Key="in_memoryFilePath">
+                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_173">in_memoryLocation</CSharpValue>
+                                                                  </InArgument>
+                                                                </ui:InvokeCode.Arguments>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </ui:InvokeCode>
+                                                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Close  Detailed Declaration View" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NClick_41" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="180" Version="V5">
+                                                                <uix:NClick.Target>
+                                                                  <uix:TargetAnchorable ContentHash="NL_M9CxJz0e5Htpj8fvGpw" DesignTimeRectangle="1514, 237, 16, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Detailed Declaration - View [*]' role='internal frame' /&gt;&lt;java hasTableAncestor='0' name='Close' role='push button' /&gt;" Guid="78fd4fca-15b3-4259-8f26-24bcce34f9ce" InformativeScreenshot="f923ac287de7435e0ef56715a952976d.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/S7qb1_UEakKPKH49Lc7NQg" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                                                </uix:NClick.Target>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NClick>
+                                                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Close  Detailed Declaration Finder" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NClick_42" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="180" Version="V5">
+                                                                <uix:NClick.Target>
+                                                                  <uix:TargetAnchorable ContentHash="BoBWq3D6nUmy-RrfeGqabQ" DesignTimeRectangle="834, 201, 16, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Detailed Declaration finder' role='internal frame' /&gt;&lt;java hasTableAncestor='0' name='Close' role='push button' /&gt;" Guid="0a14c853-0a21-4486-a70b-56530507eea3" InformativeScreenshot="054cbb5c76ffc0eb685b44c44479bd96.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/LJkITjVlUUmvtR29SPkfAQ" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                                                </uix:NClick.Target>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NClick>
+                                                              <ui:Continue sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Continue_13" />
+                                                            </Sequence>
+                                                          </If.Else>
+                                                        </If>
                                                       </Sequence>
                                                     </ActivityAction>
                                                   </uix:NApplicationCard.Body>
@@ -1227,45 +1397,6 @@
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                 </uix:NApplicationCard>
-                                                <ui:InvokeCode ContinueOnError="{x:Null}" Code="var lc = lcMemory.FirstOrDefault(x =&gt; x.LCId == lcno);&#xA;if (lc != null)&#xA;{&#xA;    var writeOffId = $&quot;{RegistrationNumber}_{lcno}&quot;;&#xA;    var writeOff = lc.WriteOffs.FirstOrDefault(w =&gt; w.WriteOffId == writeOffId);&#xA;    if (writeOff != null)&#xA;    {&#xA;        writeOff.IsDownloaded = true;&#xA;        writeOff.IsReceipt = isReceiptR;&#xA;&#xA;        System.IO.File.WriteAllText(&#xA;            in_memoryFilePath,&#xA;            Newtonsoft.Json.JsonConvert.SerializeObject(lcMemory, Newtonsoft.Json.Formatting.Indented)&#xA;        );&#xA;    }&#xA;}" DisplayName="Invoke Code --update into  memory" sap:VirtualizedContainerService.HintSize="451.2,400.8" sap2010:WorkflowViewState.IdRef="InvokeCode_9" Language="CSharp">
-                                                  <ui:InvokeCode.Arguments>
-                                                    <InOutArgument x:TypeArguments="scg:List(am:LcMemoryEntry)" x:Key="lcMemory">
-                                                      <CSharpReference x:TypeArguments="scg:List(am:LcMemoryEntry)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_72">lcMemory</CSharpReference>
-                                                    </InOutArgument>
-                                                    <InArgument x:TypeArguments="x:String" x:Key="lcno">
-                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_160">lcno</CSharpValue>
-                                                    </InArgument>
-                                                    <InArgument x:TypeArguments="x:String" x:Key="RegistrationNumber">
-                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_161">RegistrationNumber</CSharpValue>
-                                                    </InArgument>
-                                                    <InArgument x:TypeArguments="x:String" x:Key="in_memoryFilePath">
-                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_162">in_memoryLocation</CSharpValue>
-                                                    </InArgument>
-                                                    <InArgument x:TypeArguments="x:Boolean" x:Key="isReceiptR">True</InArgument>
-                                                  </ui:InvokeCode.Arguments>
-                                                </ui:InvokeCode>
-                                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Close  Detailed Declaration View" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="180" Version="V5">
-                                                  <uix:NClick.Target>
-                                                    <uix:TargetAnchorable ContentHash="NL_M9CxJz0e5Htpj8fvGpw" DesignTimeRectangle="1514, 237, 16, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java name='Detailed Declaration - View [*]' role='internal frame' /&gt;&lt;java hasTableAncestor='0' name='Close' role='push button' /&gt;" Guid="78fd4fca-15b3-4259-8f26-24bcce34f9ce" InformativeScreenshot="f923ac287de7435e0ef56715a952976d.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/S7qb1_UEakKPKH49Lc7NQg" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                                                  </uix:NClick.Target>
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                </uix:NClick>
-                                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Close  Detailed Declaration Finder" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,184.8" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5e06740c-f8b1-4292-9e36-aad2b8096ac9" Timeout="180" Version="V5">
-                                                  <uix:NClick.Target>
-                                                    <uix:TargetAnchorable ContentHash="BoBWq3D6nUmy-RrfeGqabQ" DesignTimeRectangle="834, 201, 16, 16" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Detailed Declaration finder' role='internal frame' /&gt;&lt;java hasTableAncestor='0' name='Close' role='push button' /&gt;" Guid="0a14c853-0a21-4486-a70b-56530507eea3" InformativeScreenshot="054cbb5c76ffc0eb685b44c44479bd96.jpg" Reference="KufmkzIlJkuDJlbts6D-4A/LJkITjVlUUmvtR29SPkfAQ" ScopeSelectorArgument="&lt;wnd app='jp2launcher.exe' cls='SunAwtFrame' title='ASYCUDAWorld - bnkmutualtrust' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                                                  </uix:NClick.Target>
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                </uix:NClick>
                                               </Sequence>
                                             </If.Else>
                                           </If>
@@ -1277,7 +1408,7 @@
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="writeOffRowException" />
                                             </ActivityAction.Argument>
-                                            <Sequence DisplayName="Catch - Write Off Row" sap:VirtualizedContainerService.HintSize="520,24.8" sap2010:WorkflowViewState.IdRef="Sequence_Catch_2">
+                                            <Sequence DisplayName="Catch - Write Off Row" sap:VirtualizedContainerService.HintSize="555.2,24.8" sap2010:WorkflowViewState.IdRef="Sequence_Catch_2">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1307,7 +1438,7 @@
                                         </Catch>
                                       </TryCatch.Catches>
                                       <TryCatch.Finally>
-                                        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="520,89.6" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="555.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_50">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1363,7 +1494,7 @@
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="s:Exception" Name="lcRowException" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Catch - LC Row" sap:VirtualizedContainerService.HintSize="625.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_Catch_1">
+                      <Sequence DisplayName="Catch - LC Row" sap:VirtualizedContainerService.HintSize="660.8,24.8" sap2010:WorkflowViewState.IdRef="Sequence_Catch_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1393,7 +1524,7 @@
                   </Catch>
                 </TryCatch.Catches>
                 <TryCatch.Finally>
-                  <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="625.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                  <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="660.8,89.6" sap2010:WorkflowViewState.IdRef="Sequence_57">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1417,7 +1548,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEachRow>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="662.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="697.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
         <ui:LogMessage.Message>
           <InArgument x:TypeArguments="x:Object">
             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_112">"Process Completed"</CSharpValue>

@@ -7,6 +7,30 @@
       "type": "process"
     },
     {
+      "filePath": "Service\\FindOutReceiptNumber.cs",
+      "uniqueId": "94934be9-1f2a-4a9c-90e3-c37e6cecfc77",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "pdfPath": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "pdfPath"
+        ]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "Output": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
       "filePath": "Service\\HelperService.cs",
       "uniqueId": "2a4ec276-4734-4919-876d-d2f9596f1d9a",
       "type": "process"
